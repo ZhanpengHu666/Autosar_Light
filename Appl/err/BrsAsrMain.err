@@ -1,0 +1,21 @@
+ccarm: Warning: Option "-object_dir=" with empty argument ignored.
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BrsAsrMain.c", line 298: warning #14-D: 
+          extra text after expected end of preprocessing directive
+  #endif[]
+        ^
+
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BrsAsrMain.c", line 588: warning #177-D: 
+          variable "i" was declared but never referenced
+  unsigned int i,j;
+               ^
+
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BrsAsrMain.c", line 588: warning #177-D: 
+          variable "j" was declared but never referenced
+  unsigned int i,j;
+                 ^
+
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BrsAsrMain.c", line 269: warning #177-D: 
+          function "BrsAsrMainCyclic1ms" was declared but never referenced
+  static void BrsAsrMainCyclic1ms(void);
+              ^
+

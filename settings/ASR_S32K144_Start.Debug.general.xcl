@@ -1,0 +1,17 @@
+"D:\Program Files\IAR\arm\bin\armproc.dll" 
+
+"D:\Program Files\IAR\arm\bin\armjlink2.dll" 
+
+"G:\matlab\TurnLight\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Debug\Exe\ASR_S32K144_Start.out" 
+
+--plugin="D:\Program Files\IAR\arm\bin\armbat.dll" 
+
+--device_macro="D:\Program Files\IAR\arm\config\debugger\NXP\KE1xF.dmac" 
+
+--device_macro="D:\Program Files\IAR\arm\config\debugger\NXP\S32K14x_trace.dmac" 
+
+--flash_loader="D:\Program Files\IAR\arm\config\flashloader\NXP\FlashS32K144.board" 
+
+
+
+

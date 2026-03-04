@@ -1,0 +1,31 @@
+ccarm: Warning: Option "-object_dir=" with empty argument ignored.
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BswInit_Callout_Stubs.c", line 259: warning #9-D: 
+          nested comment is not allowed
+    /* Protects against task interruptions -> no locking needed, because all main functions are on same task */
+    ^
+
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BswInit_Callout_Stubs.c", line 264: warning #9-D: 
+          nested comment is not allowed
+    /* Protects against task interruptions -> no locking needed, because all main functions are on same task */
+    ^
+
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BswInit_Callout_Stubs.c", line 269: warning #9-D: 
+          nested comment is not allowed
+    /* Protects against task interruptions -> no locking needed, because all main functions are on same task */
+    ^
+
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BswInit_Callout_Stubs.c", line 274: warning #9-D: 
+          nested comment is not allowed
+    /* Protects against task interruptions -> no locking needed, because all main functions are on same task */
+    ^
+
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BswInit_Callout_Stubs.c", line 276: warning #9-D: 
+          nested comment is not allowed
+  #endif /*!BRS_ENABLE_HLPTEST_SUPPORT*/
+         ^
+
+"shared/zBrs_AsrEmbeddedRunTimeSystemCfg5/BswInit_Callout_Stubs.c", line 106: warning #550-D: 
+          variable "BrsAsrApplCanInterruptLockCtr" was set but never used
+    static uint8 BrsAsrApplCanInterruptLockCtr;
+                 ^
+

@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="76a9c467-d3a8-47eb-ac44-006b8fe5cc6c">
+      <SHORT-NAME>COM</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="b6ede00b-b6a5-4ab0-b9f3-35c5aa8664b9">
+          <SHORT-NAME>VECTOR</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="0a70596a-1d6c-4ff3-afae-94918f2848ab">
+              <SHORT-NAME>CFG</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="c63afa23-8617-4926-9a28-9f3f37ab99a8">
+                  <SHORT-NAME>WORKFLOW</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE UUID="64365042-84f5-4e60-b841-ec26425c46e5">
+                      <SHORT-NAME>SYSDESC</SHORT-NAME>
+                      <AR-PACKAGES>
+                        <AR-PACKAGE UUID="18eeed14-241f-4106-a180-c7aded489421">
+                          <SHORT-NAME>SYNC</SHORT-NAME>
+                          <ELEMENTS>
+                            <SYSTEM UUID="67562945-d323-4eaf-8493-8ce12755f932">
+                              <SHORT-NAME>SYSTEM</SHORT-NAME>
+                              <CATEGORY>ECU_EXTRACT</CATEGORY>
+                              <FIBEX-ELEMENTS>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="NM-CONFIG">/NM/NmConfig</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-TP-CONFIG">/TP/CAN00_CAN</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-CLUSTER">/Cluster/CAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/ECU/MyECU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/IPDUGroup/MyECU_oCAN00_Rx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/IPDUGroup/MyECU_oCAN00_Tx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_diag_Request_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_diag_RequestGlobal_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_diag_Response_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_nm_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_nm_RearECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/PDU/msg_diag_Request_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/PDU/msg_diag_RequestGlobal_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/PDU/msg_diag_Response_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="NM-PDU">/PDU/msg_nm_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="NM-PDU">/PDU/msg_nm_RearECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="N-PDU">/PDU/msg_diag_Request_MyECU_Tp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="N-PDU">/PDU/msg_diag_RequestGlobal_Tp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="N-PDU">/PDU/msg_diag_Response_MyECU_Tp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_LampCnt_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_RearInteriorLight_omsg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_State_RearInteriorLight_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_State_RearLeftDoor_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_State_RearRightDoor_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/CrashIntensity_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/EmergencyBrakeLight_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/HazardSw_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/IGN_Status_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/LA_St_DirectionLampL_omsg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/LA_St_DirectionLampR_omsg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/TurnLampFb_FL_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/TurnLampFb_FR_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/TurnLampFb_RL_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/TurnLampFb_RR_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/TurnLampSw_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/VehicleSpeed_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/VehicleSpeed_Valid_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                              </FIBEX-ELEMENTS>
+                              <MAPPINGS>
+                                <SYSTEM-MAPPING UUID="826abef8-a50a-4f45-90ed-8f68d7f2f552">
+                                  <SHORT-NAME>MAPPINGS</SHORT-NAME>
+                                  <DATA-MAPPINGS>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/EmergencyBrakeLight</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/EmergencyBrakeLight/u8_Signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/EmergencyBrakeLight</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/HazardSw</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/HazardSw/u8_Signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/HazardSw</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/IGN_Status</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/IGN_Status/u8_signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/IGN_Status</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/Com_CAN_LA_St_DirectionLampL</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/TurnLampCtrlCmd_FL/u8_signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/LA_St_DirectionLampL</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/Com_CAN_LA_St_DirectionLampR</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/TurnLampCtrlCmd_FL/u8_signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/LA_St_DirectionLampR</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampFb_FL</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/TurnLampFb_FL/u8_Signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/TurnLampFb_FL</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampFb_FR</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/TurnLampFb_FR/u8_Signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/TurnLampFb_FR</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampFb_RL</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/TurnLampFb_RL/u8_Signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/TurnLampFb_RL</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampFb_RR</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/TurnLampFb_RR/u8_Signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/TurnLampFb_RR</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampSw</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/TurnLampSw/u8_Signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/TurnLampSw</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/VehicleSpeed</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/VehicleSpeed/u16_signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/VehicleSpeed</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/VehicleSpeed_Valid</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/VehicleSpeed_Valid/u8_Signal</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/VehicleSpeed_Valid</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                  </DATA-MAPPINGS>
+                                </SYSTEM-MAPPING>
+                              </MAPPINGS>
+                              <ROOT-SOFTWARE-COMPOSITIONS>
+                                <ROOT-SW-COMPOSITION-PROTOTYPE UUID="a6157773-9fa7-4c61-9e7b-e7e2c3fd7bdf">
+                                  <SHORT-NAME>COMPOSITIONTYPE</SHORT-NAME>
+                                  <FLAT-MAP-REF DEST="FLAT-MAP">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</FLAT-MAP-REF>
+                                  <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SOFTWARE-COMPOSITION-TREF>
+                                </ROOT-SW-COMPOSITION-PROTOTYPE>
+                              </ROOT-SOFTWARE-COMPOSITIONS>
+                            </SYSTEM>
+                            <COMPOSITION-SW-COMPONENT-TYPE UUID="a5d88c2d-3a5f-4ddc-88fe-a529902aaf19">
+                              <SHORT-NAME>COMPOSITIONTYPE</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                                <ANNOTATION>
+                                  <LABEL>
+                                    <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                  </LABEL>
+                                  <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                              <COMPONENTS>
+                                <SW-COMPONENT-PROTOTYPE UUID="00965f10-bcb0-42ec-9d93-a14d19fa8bcc">
+                                  <SHORT-NAME>BswM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="3ea1e045-f9c3-479c-89f6-52cf0f001a07">
+                                  <SHORT-NAME>ComM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/ComM_swc/ComponentTypes/ComM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="e70ffa2b-4664-430f-abdb-4549bd94b2ce">
+                                  <SHORT-NAME>Det</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Det_swc/ComponentTypes/Det</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="e6a62773-e3a5-47b2-ac93-080798d10a07">
+                                  <SHORT-NAME>EcuM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="27952c58-181a-42e9-9aa1-510d43a8b269">
+                                  <SHORT-NAME>Os_OsCore0_swc</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="9eaf53f7-3616-4d1b-b896-a10e18024eef">
+                                  <SHORT-NAME>DemMaster_0</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="1ac7f398-194e-47c2-82ae-c24b63702466">
+                                  <SHORT-NAME>DemSatellite_0</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="4de37115-cc10-4e65-8c4b-261879a39d77">
+                                  <SHORT-NAME>Dcm</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Dcm_swc/ComponentTypes/Dcm</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="65d07982-b450-4fc8-97f7-fcf23ca69a48">
+                                  <SHORT-NAME>CpLedTask</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/CtLedTask</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="6cd128d2-d8e8-4bf6-b225-9ee91090c0af">
+                                  <SHORT-NAME>Cdd_SBC_UJA1169</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/CddSbc</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="a4e108f0-f12c-4b05-a765-3e7ef517c62d">
+                                  <SHORT-NAME>TurnLight</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/TurnLight</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="5f6e8610-894e-441c-9dd5-27cc0512990c">
+                                  <SHORT-NAME>TurnLightArb</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/TurnLightArb</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="e413370d-3e46-45d0-8519-a6472f6e8600">
+                                  <SHORT-NAME>TurnLightAct</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/TurnLightAct</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="377ce320-581c-4251-9d06-ad1173504286">
+                                  <SHORT-NAME>CddIoHwAb</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="ECU-ABSTRACTION-SW-COMPONENT-TYPE">/ComponentTypes/Cdd_IoHwAb</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                              </COMPONENTS>
+                              <CONNECTORS>
+                                <ASSEMBLY-SW-CONNECTOR UUID="b00a99bb-51bd-42bf-9edb-6ce6cee64494">
+                                  <SHORT-NAME>BswM_Switch_ESH_ModeSwitch_BswM_Notification_ESH_ModeNotification</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Switch_ESH_ModeSwitch</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="6756878a-6f05-4789-9552-fc18dafa6e41">
+                                  <SHORT-NAME>ComM_UR_CN_CAN00_06ecbb07_CpLedTask_UR_CN_CAN00_06ecbb07</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/ComM_swc/ComponentTypes/ComM/UR_CN_CAN00_06ecbb07</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/UR_CN_CAN00_06ecbb07</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="20aba283-ac5c-4a49-8b40-4e545059fe5e">
+                                  <SHORT-NAME>TurnLightAct_TurnLampCtrlCmd_FR_TurnLight_TurnLampCtrlCmd_FR</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/TurnLampCtrlCmd_FR</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampCtrlCmd_FR</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="341ccea5-9123-4734-8da7-5d2527e00aaf">
+                                  <SHORT-NAME>TurnLightAct_TurnLampCtrlCmd_RR_TurnLight_TurnLampCtrlCmd_RR</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/TurnLampCtrlCmd_RR</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampCtrlCmd_RR</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="214157d4-cc2f-43c1-9397-f088c8611ce0">
+                                  <SHORT-NAME>TurnLightAct_CountSignal_Left_TurnLight_CountSignal_Left</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/CountSignal_Left</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/CountSignal_Left</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="d24a483a-9d69-40e4-a16a-a81da64dfc66">
+                                  <SHORT-NAME>TurnLightAct_TurnLampCtrlCmd_FL_TurnLight_TurnLampCtrlCmd_FL</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/TurnLampCtrlCmd_FL</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampCtrlCmd_FL</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="37349d98-db9f-4c0d-b3cc-62fc58a4e13f">
+                                  <SHORT-NAME>TurnLightArb_TurnLightService_TurnLight_TurnLightService</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightArb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightArb/TurnLightService</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLightService</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="73727366-8f75-41e5-99d3-a75322070017">
+                                  <SHORT-NAME>TurnLightArb_TurnLamp_RL_Out_TurnLightAct_TurnLamp_RL_Out</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightArb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightArb/TurnLamp_RL_Out</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/TurnLamp_RL_Out</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="a0b81f87-9aae-449a-aa22-3fe2db789640">
+                                  <SHORT-NAME>TurnLightArb_TurnLapme_RR_Out_TurnLightAct_TurnLapme_RR_Out</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightArb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightArb/TurnLapme_RR_Out</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/TurnLapme_RR_Out</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="b786d280-0f1f-48f0-8f4b-f0e2e88c8087">
+                                  <SHORT-NAME>TurnLightArb_TurnLamp_FL_Out_TurnLightAct_TurnLamp_FL_Out</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightArb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightArb/TurnLamp_FL_Out</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/TurnLamp_FL_Out</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="420b44fe-5ab8-4ad6-9c4d-65a8449a6be1">
+                                  <SHORT-NAME>TurnLightArb_TurnLapm_FR_Out_TurnLightAct_TurnLapm_FR_Out</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightArb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightArb/TurnLapm_FR_Out</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/TurnLapm_FR_Out</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="3b4bd29b-e4f3-445c-ad0f-8bcdbbdae745">
+                                  <SHORT-NAME>TurnLightAct_TurnLampCtrlCmd_RL_TurnLight_TurnLampCtrlCmd_RL</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/TurnLampCtrlCmd_RL</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/TurnLampCtrlCmd_RL</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="8741ce21-c2ef-4a09-af0e-38edf73637bf">
+                                  <SHORT-NAME>TurnLightAct_CountSignal_Right_TurnLight_CountSignal_Right</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/CountSignal_Right</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLight/CountSignal_Right</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="0f04ebb6-358a-43cb-9c0b-53d9b8896c39">
+                                  <SHORT-NAME>CddIoHwAb_IoHwAb_TurnLightCtrlCmd_RR_TurnLightAct_IoHwAb_TurnLightCtrlCmd_RR</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CddIoHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Cdd_IoHwAb/IoHwAb_TurnLightCtrlCmd_RR</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/IoHwAb_TurnLightCtrlCmd_RR</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="22ccdb1a-3adb-4740-96a7-c1070e063711">
+                                  <SHORT-NAME>CddIoHwAb_IoHwAb_TurnLightCtrlCmd_FL_TurnLightAct_IoHwAb_TurnLightCtrlCmd_FL</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CddIoHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Cdd_IoHwAb/IoHwAb_TurnLightCtrlCmd_FL</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/IoHwAb_TurnLightCtrlCmd_FL</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="a74605b9-09bb-4e4a-acf3-44ba3f6f9180">
+                                  <SHORT-NAME>CddIoHwAb_IoHwAb_TurnLightCtrlCmd_FR_TurnLightAct_IoHwAb_TurnLightCtrlCmd_FR</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CddIoHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Cdd_IoHwAb/IoHwAb_TurnLightCtrlCmd_FR</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/IoHwAb_TurnLightCtrlCmd_FR</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="7f6cb250-1d19-4692-b06b-c3632be57108">
+                                  <SHORT-NAME>CddIoHwAb_IoHwAb_TurnLightCtrlCmd_RL_TurnLightAct_IoHwAb_TurnLightCtrlCmd_RL</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CddIoHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Cdd_IoHwAb/IoHwAb_TurnLightCtrlCmd_RL</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/TurnLightAct/IoHwAb_TurnLightCtrlCmd_RL</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                              </CONNECTORS>
+                            </COMPOSITION-SW-COMPONENT-TYPE>
+                            <END-TO-END-PROTECTION-SET UUID="729fae43-c5c0-4595-b149-6fadd4be710e">
+                              <SHORT-NAME>E2EPROTECTIONSET</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                            </END-TO-END-PROTECTION-SET>
+                            <PORT-INTERFACE-MAPPING-SET UUID="c38d4b82-b16d-4872-bea5-f96233588f78">
+                              <SHORT-NAME>PORTINTERFACEMAPPINGSET</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                            </PORT-INTERFACE-MAPPING-SET>
+                          </ELEMENTS>
+                          <AR-PACKAGES>
+                            <AR-PACKAGE UUID="7986d14b-35cd-4c5b-831e-e1dce5db1776">
+                              <SHORT-NAME>REFERENCES</SHORT-NAME>
+                              <ADMIN-DATA>
+                                <SDGS>
+                                  <SDG GID="DV:CfgReferences">
+                                    <SD GID="a5d88c2d-3a5f-4ddc-88fe-a529902aaf19">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
+                                    <SD GID="00965f10-bcb0-42ec-9d93-a14d19fa8bcc">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
+                                    <SD GID="377ce320-581c-4251-9d06-ad1173504286">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CddIoHwAb</SD>
+                                    <SD GID="6cd128d2-d8e8-4bf6-b225-9ee91090c0af">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Cdd_SBC_UJA1169</SD>
+                                    <SD GID="3ea1e045-f9c3-479c-89f6-52cf0f001a07">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
+                                    <SD GID="65d07982-b450-4fc8-97f7-fcf23ca69a48">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</SD>
+                                    <SD GID="4de37115-cc10-4e65-8c4b-261879a39d77">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</SD>
+                                    <SD GID="9eaf53f7-3616-4d1b-b896-a10e18024eef">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemMaster_0</SD>
+                                    <SD GID="1ac7f398-194e-47c2-82ae-c24b63702466">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemSatellite_0</SD>
+                                    <SD GID="e70ffa2b-4664-430f-abdb-4549bd94b2ce">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
+                                    <SD GID="e6a62773-e3a5-47b2-ac93-080798d10a07">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
+                                    <SD GID="27952c58-181a-42e9-9aa1-510d43a8b269">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore0_swc</SD>
+                                    <SD GID="a4e108f0-f12c-4b05-a765-3e7ef517c62d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLight</SD>
+                                    <SD GID="e413370d-3e46-45d0-8519-a6472f6e8600">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightAct</SD>
+                                    <SD GID="5f6e8610-894e-441c-9dd5-27cc0512990c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/TurnLightArb</SD>
+                                    <SD GID="6090f47b-22ac-4e45-8807-2cfb3df63612">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
+                                    <SD GID="67562945-d323-4eaf-8493-8ce12755f932">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
+                                    <SD GID="a6157773-9fa7-4c61-9e7b-e7e2c3fd7bdf">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="87444BF0-820B-4F71-B55C-57CE73D58CE6">/ComponentTypes/CddSbc</SD>
+                                    <SD GID="03328975-2907-4C5B-8945-E3FB77C2EE1C">/ComponentTypes/CddSbc/CddSbc_InternalBehavior/TMT_Sbc_Test_Runnable</SD>
+                                    <SD GID="B67AB846-16CD-45AA-BF67-FC18835F7E19">/ComponentTypes/CddSbc_Implementation</SD>
+                                    <SD GID="1F8B6F13-12D1-42BA-A3E6-B796A52F2F25">/ComponentTypes/Cdd_IoHwAb</SD>
+                                    <SD GID="53CDAC66-146E-47EB-A419-86A039D6C395">/ComponentTypes/Cdd_IoHwAb/Cdd_IoHwAb_InternalBehavior/OIT_IoHwAb_TurnLightCtrlCmd_FR_Operation_IoHwAb_TurnLightCtrlCmd_FR_Operation</SD>
+                                    <SD GID="953F9165-1E24-4509-A0D8-97A112B04F20">/ComponentTypes/Cdd_IoHwAb/Cdd_IoHwAb_InternalBehavior/OIT_IoHwAb_TurnLightCtrlCmd_RL_Operation_IoHwAb_TurnLightCtrlCmd_RL_Operation</SD>
+                                    <SD GID="B3472C95-2C50-4388-A871-18F2F6557DC6">/ComponentTypes/Cdd_IoHwAb/Cdd_IoHwAb_InternalBehavior/OIT_IoHwAb_TurnLightCtrlCmd_RR_Operation_IoHwAb_TurnLightCtrlCmd_RR_Operation</SD>
+                                    <SD GID="C2686E15-195C-4ECB-8560-FDB9F39B41AF">/ComponentTypes/Cdd_IoHwAb/Cdd_IoHwAb_InternalBehavior/OIT_Runnable_IoHwAb_TurnLightCtrlCmd_FL_Operation</SD>
+                                    <SD GID="C5E1F516-B2DA-4F3D-897B-B7E488D7E97D">/ComponentTypes/Cdd_IoHwAb/Cdd_IoHwAb_InternalBehavior/TMT_IoHwAbRunnable</SD>
+                                    <SD GID="86BC66C3-7C49-47C9-890F-32138DD2D1B6">/ComponentTypes/Cdd_IoHwAb/IoHwAb_TurnLightCtrlCmd_FL</SD>
+                                    <SD GID="19207370-B5C8-4220-841C-FC42E17F08D4">/ComponentTypes/Cdd_IoHwAb/IoHwAb_TurnLightCtrlCmd_FR</SD>
+                                    <SD GID="FB01AD64-CDE6-4DEE-8F17-3EF39898F6D9">/ComponentTypes/Cdd_IoHwAb/IoHwAb_TurnLightCtrlCmd_RL</SD>
+                                    <SD GID="E1BFA2D5-3537-4CA7-8FA2-37EE2AACC6C0">/ComponentTypes/Cdd_IoHwAb/IoHwAb_TurnLightCtrlCmd_RR</SD>
+                                    <SD GID="8085A8DE-E2B5-4D0B-A85D-442C5BA60BB8">/ComponentTypes/Cdd_IoHwAb_Implementation</SD>
+                                    <SD GID="98B791C3-A1D1-45FE-807C-A75E9A5DA7D2">/ComponentTypes/CtLedTask</SD>
+                                    <SD GID="7192826B-73BB-4D99-A258-14E751560EB3">/ComponentTypes/CtLedTask/CtLedTask_InternalBehavior/CtLedTask_InitEvent</SD>
+                                    <SD GID="2904E0F1-1813-44D5-9A41-57A5808DD482">/ComponentTypes/CtLedTask/CtLedTask_InternalBehavior/TMT_LedRunnable</SD>
+                                    <SD GID="2A37BFB3-125E-4FFF-9381-FF394F05B2E3">/ComponentTypes/CtLedTask/UR_CN_CAN00_06ecbb07</SD>
+                                    <SD GID="2EB878D9-8957-4976-A7ED-B631951289EF">/ComponentTypes/CtLedTask_Implementation</SD>
+                                    <SD GID="0C1DD452-292D-45C2-84B8-12E9AAD7CF7C">/ComponentTypes/TurnLight</SD>
+                                    <SD GID="39F1B831-1283-46DF-B5BE-59E65A5939D4">/ComponentTypes/TurnLight/CountSignal_Left</SD>
+                                    <SD GID="CEA50957-B6A1-4423-858C-78E8D3A03406">/ComponentTypes/TurnLight/CountSignal_Right</SD>
+                                    <SD GID="0D6D0259-CE73-4CAE-912D-0E627EF4B82A">/ComponentTypes/TurnLight/EmergencyBrakeLight</SD>
+                                    <SD GID="C3A5DC8C-1244-4196-B718-AB1381C43057">/ComponentTypes/TurnLight/HazardSw</SD>
+                                    <SD GID="A486460B-0413-4E42-A4DA-3B34981F7382">/ComponentTypes/TurnLight/IGN_Status</SD>
+                                    <SD GID="4667668A-5DCB-4049-B343-1BA71779A5A8">/ComponentTypes/TurnLight/TurnLampCtrlCmd_FL</SD>
+                                    <SD GID="B7F59A7C-3BAF-4F9C-89FD-21A01FC64B3A">/ComponentTypes/TurnLight/TurnLampCtrlCmd_FR</SD>
+                                    <SD GID="0D1DF3AF-87E8-49F3-96C2-A19B51E54737">/ComponentTypes/TurnLight/TurnLampCtrlCmd_RL</SD>
+                                    <SD GID="E3C351C0-35FB-4823-8362-35D2F52F7F05">/ComponentTypes/TurnLight/TurnLampCtrlCmd_RR</SD>
+                                    <SD GID="00896DB0-5689-41CC-9EB3-4088958CFCCC">/ComponentTypes/TurnLight/TurnLampFb_FL</SD>
+                                    <SD GID="77ECBDFC-C713-4F66-8DAD-527DB687ACA4">/ComponentTypes/TurnLight/TurnLampFb_FR</SD>
+                                    <SD GID="7019B030-2E0F-41CD-A85D-7C7516F4D4CF">/ComponentTypes/TurnLight/TurnLampFb_RL</SD>
+                                    <SD GID="C6230AB7-C3DB-4966-BEA2-E4550633159F">/ComponentTypes/TurnLight/TurnLampFb_RR</SD>
+                                    <SD GID="CABC0F8E-20FB-4271-A846-4C19D22E4F5A">/ComponentTypes/TurnLight/TurnLampSw</SD>
+                                    <SD GID="8B955271-D7C8-4489-9E5B-8ED759224A4C">/ComponentTypes/TurnLight/TurnLightService</SD>
+                                    <SD GID="5DC6EC4A-EBBC-4577-B5B9-8750C9549BE7">/ComponentTypes/TurnLight/TurnLight_InternalBehavior/TMT_TurnLight_Runnable_10ms</SD>
+                                    <SD GID="2DD9904B-4496-4055-945E-682CFE697118">/ComponentTypes/TurnLight/VehicleSpeed</SD>
+                                    <SD GID="FBE873D7-A85C-45F5-9F31-189D776E464D">/ComponentTypes/TurnLight/VehicleSpeed_Valid</SD>
+                                    <SD GID="C950C6D5-6A07-4C53-987D-1CD627E98B04">/ComponentTypes/TurnLightAct</SD>
+                                    <SD GID="ABFF2182-A3ED-44F0-A94D-7DB92828FC01">/ComponentTypes/TurnLightAct/Com_CAN_LA_St_DirectionLampL</SD>
+                                    <SD GID="4F6147FA-2E54-44ED-81DA-F2E818E8E532">/ComponentTypes/TurnLightAct/Com_CAN_LA_St_DirectionLampR</SD>
+                                    <SD GID="BF0A72D5-9001-411E-9892-877CD1650991">/ComponentTypes/TurnLightAct/CountSignal_Left</SD>
+                                    <SD GID="BC2930C7-3DD3-494D-B97C-8214CFC86A00">/ComponentTypes/TurnLightAct/CountSignal_Right</SD>
+                                    <SD GID="A70F5528-667D-4AA1-B5D0-993158F4B8E4">/ComponentTypes/TurnLightAct/IoHwAb_TurnLightCtrlCmd_FL</SD>
+                                    <SD GID="6EFA35E4-7124-4195-A8C3-7988FF19A65F">/ComponentTypes/TurnLightAct/IoHwAb_TurnLightCtrlCmd_FR</SD>
+                                    <SD GID="C568F66F-B1F8-499B-9C98-611560BFD88C">/ComponentTypes/TurnLightAct/IoHwAb_TurnLightCtrlCmd_RL</SD>
+                                    <SD GID="5CA69CCB-888C-47D7-9F72-784430949108">/ComponentTypes/TurnLightAct/IoHwAb_TurnLightCtrlCmd_RR</SD>
+                                    <SD GID="8DDB2F09-3706-4B9F-A9B5-47E8D6F40B43">/ComponentTypes/TurnLightAct/TurnLampCtrlCmd_FL</SD>
+                                    <SD GID="DADF2560-FE38-4885-B57B-2EFE8D0A9853">/ComponentTypes/TurnLightAct/TurnLampCtrlCmd_FR</SD>
+                                    <SD GID="C394F180-1E6A-4306-8A81-FBF6D1C94B76">/ComponentTypes/TurnLightAct/TurnLampCtrlCmd_RL</SD>
+                                    <SD GID="E2B1960C-29B9-4D8A-BD62-894F703E3633">/ComponentTypes/TurnLightAct/TurnLampCtrlCmd_RR</SD>
+                                    <SD GID="1A06B22F-C716-4E7E-8EB7-2F70772B476D">/ComponentTypes/TurnLightAct/TurnLamp_FL_Out</SD>
+                                    <SD GID="262C7CF0-78B8-4515-8407-364481F2D524">/ComponentTypes/TurnLightAct/TurnLamp_RL_Out</SD>
+                                    <SD GID="B7AB6256-C685-40DF-9219-AE89F6D88B7D">/ComponentTypes/TurnLightAct/TurnLapm_FR_Out</SD>
+                                    <SD GID="0CB123B5-0BC9-45A8-A93E-33EB60D71032">/ComponentTypes/TurnLightAct/TurnLapme_RR_Out</SD>
+                                    <SD GID="33ABBDB1-8538-4F6A-8246-069E2A2A26B2">/ComponentTypes/TurnLightAct/TurnLightAct_InternalBehavior/TMT_Runnable_10ms</SD>
+                                    <SD GID="B0FCCDD7-C3E6-4A0F-ADCB-322C7582C541">/ComponentTypes/TurnLightAct_Implementation</SD>
+                                    <SD GID="DE9F4076-A202-4169-892F-4D918A45566C">/ComponentTypes/TurnLightArb</SD>
+                                    <SD GID="587FA8B4-3842-4052-87F6-8F4370CFE7C5">/ComponentTypes/TurnLightArb/TurnLamp_FL_Out</SD>
+                                    <SD GID="8DD2673F-CFA5-418C-8889-5D1646A6E5A8">/ComponentTypes/TurnLightArb/TurnLamp_RL_Out</SD>
+                                    <SD GID="3FF1B455-3021-48A0-9055-1838A8DF2A69">/ComponentTypes/TurnLightArb/TurnLapm_FR_Out</SD>
+                                    <SD GID="67104197-496E-49F9-A4D1-4F3BD2748C90">/ComponentTypes/TurnLightArb/TurnLapme_RR_Out</SD>
+                                    <SD GID="94FA5A7A-1FEC-4424-BF5C-73FAC197C9C1">/ComponentTypes/TurnLightArb/TurnLightArb_InternalBehavior/OIT_TurnLightService_TurnLightControl_Operation_TurnLightService_TurnLightControl_Operation</SD>
+                                    <SD GID="54BEE53C-3B13-4F05-9792-30D6F542E6B9">/ComponentTypes/TurnLightArb/TurnLightArb_InternalBehavior/TMT_TurnLightArb_Runnable_10ms</SD>
+                                    <SD GID="CEA8E16D-65E3-4902-ADB0-CA0068F66C2C">/ComponentTypes/TurnLightArb/TurnLightService</SD>
+                                    <SD GID="32002FDD-F31B-4240-AF54-F62EB5306EFE">/ComponentTypes/TurnLightArb_Implementation</SD>
+                                    <SD GID="A0682E18-0038-432B-B048-2E9AC358718E">/ComponentTypes/TurnLight_Implementation</SD>
+                                    <SD GID="FA2722A8-DD7A-493E-ACE9-AA8189A6F547">/DataType/Constraint/DC_sig_LampCnt</SD>
+                                    <SD GID="A09255C0-B996-42CD-9521-11F45444768B">/DataType/Constraint/DC_sig_RearInteriorLight</SD>
+                                    <SD GID="B9880022-FF17-47E2-A356-E82C917F2A49">/DataType/Constraint/DC_sig_State_RearInteriorLight</SD>
+                                    <SD GID="21A1B960-D092-4399-A8AF-0BC3E9E28D92">/DataType/Constraint/DC_sig_State_RearLeftDoor</SD>
+                                    <SD GID="C7D303C4-1752-47D6-8784-6B5CA5633530">/DataType/Constraint/DC_sig_State_RearRightDoor</SD>
+                                    <SD GID="794032D5-9183-46E1-B5C7-E94311CD270B">/DataType/boolean</SD>
+                                    <SD GID="46675FC7-2690-4535-93CC-759760D7AD06">/DataType/uint8</SD>
+                                    <SD GID="FD22F03B-8D66-4CBA-A825-9E3899E072AF">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="8B217879-7829-41E0-BF34-8E733E3E019F">/ECUCompositionTypes/ECU_Composition/CddIoHwAb</SD>
+                                    <SD GID="F0764082-4F63-4CC5-8ADC-DB14FF6B95F7">/ECUCompositionTypes/ECU_Composition/Cdd_SBC_UJA1169</SD>
+                                    <SD GID="6E3B8BA0-A77C-4C85-B120-56B689E415B9">/ECUCompositionTypes/ECU_Composition/CpLedTask</SD>
+                                    <SD GID="7DF26CEF-8362-4D8B-AF51-84AC45B36DF1">/ECUCompositionTypes/ECU_Composition/TurnLight</SD>
+                                    <SD GID="38492007-D1D1-4546-BCD9-2802631A4EA0">/ECUCompositionTypes/ECU_Composition/TurnLightAct</SD>
+                                    <SD GID="1577C670-57EB-45DA-84FD-3CA62188EF09">/ECUCompositionTypes/ECU_Composition/TurnLightArb</SD>
+                                    <SD GID="a43e81d2-d27b-4c23-b29d-7f51d7c5996c">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
+                                    <SD GID="96086dc4-287c-4b6a-b413-586fecc74961">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="5943179b-c366-4b7f-937b-e5aff30db49a">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
+                                    <SD GID="0e5c870d-d8a7-4a0c-9ca9-2b2140972615">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="122ca316-e061-43f0-ab4d-9126e49a3e67">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</SD>
+                                    <SD GID="1a306fc4-bb1d-4276-acfd-9345328576ef">/MICROSAR/BswM_swc/BswMMappingSet</SD>
+                                    <SD GID="7237f0bc-3101-4d20-8277-3795b3b5e951">/MICROSAR/BswM_swc/ComponentTypes/BswM</SD>
+                                    <SD GID="2d837386-d4cb-4a33-941a-fb53864bfd95">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</SD>
+                                    <SD GID="122a8e43-e700-4f93-9ddf-62d8a5bad918">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction</SD>
+                                    <SD GID="a80933b3-9af3-4c86-8c4c-35e62c2110cc">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/Timer_BswM_MainFunction</SD>
+                                    <SD GID="5b2a8835-e740-45e1-9b13-3048ffbcf319">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</SD>
+                                    <SD GID="560d3c33-6ab9-4aa2-9cd7-4cc13c16bc14">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_PostRunRequest_0</SD>
+                                    <SD GID="b1fe86a5-367f-4b91-a71e-a8eb08ae13cf">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_PostRunRequest_1</SD>
+                                    <SD GID="91c29f37-9329-4437-b33b-af66bb1793c0">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_RunRequest_0</SD>
+                                    <SD GID="b75744a7-abab-4bd7-a1ec-513fc755ab6c">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_RunRequest_1</SD>
+                                    <SD GID="bbd0fe30-093b-4cbb-9acd-3fed93705cf0">/MICROSAR/BswM_swc/ComponentTypes/BswM/Switch_ESH_ModeSwitch</SD>
+                                    <SD GID="af752fe8-56a3-4f72-8f0e-8442aec9d602">/MICROSAR/BswM_swc/DataTypes/BswM_ESH_Mode</SD>
+                                    <SD GID="01edeba1-73e4-4bd4-b76b-e9d331e2692e">/MICROSAR/BswM_swc/DataTypes/BswM_ESH_RunRequest</SD>
+                                    <SD GID="c99e326e-bf76-4a28-9eb6-1c94dfdbeab0">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ESH_Mode</SD>
+                                    <SD GID="5012faa1-0409-4a70-93d5-ccecb251d511">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ESH_RunRequest</SD>
+                                    <SD GID="7fb824eb-56a9-4e63-9b76-cfaf956979fb">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ESH_Mode_Constr</SD>
+                                    <SD GID="66e5ad5a-81f5-48a7-a4ac-b0760f99732e">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ESH_RunRequest_Constr</SD>
+                                    <SD GID="05cde719-da7d-49aa-b4ec-8148a5197881">/MICROSAR/BswM_swc/ESH_Mode</SD>
+                                    <SD GID="c7426403-fe7a-41cb-862d-ff246fc174e1">/MICROSAR/BswM_swc/ESH_Mode/POSTRUN</SD>
+                                    <SD GID="0c6ad36f-f9bd-435a-b7a1-dbb944149cb0">/MICROSAR/BswM_swc/ESH_Mode/RUN</SD>
+                                    <SD GID="8eae5063-b793-4ae1-9c48-f5ff7b04c04e">/MICROSAR/BswM_swc/ESH_Mode/SHUTDOWN</SD>
+                                    <SD GID="71a50195-14af-4d4f-ba2d-8ee5098b2551">/MICROSAR/BswM_swc/ESH_Mode/STARTUP</SD>
+                                    <SD GID="9ee6529a-dccf-4f67-a814-f0cb38c8831d">/MICROSAR/BswM_swc/ESH_Mode/WAKEUP</SD>
+                                    <SD GID="ad3aa2d2-1978-4dff-b023-727387916e50">/MICROSAR/BswM_swc/ESH_RunRequest</SD>
+                                    <SD GID="252a7ad4-ee69-4f17-84fb-da6404f4cdc4">/MICROSAR/BswM_swc/ESH_RunRequest/RELEASED</SD>
+                                    <SD GID="3eeb69fa-6279-481f-9d38-78ba12eae4ac">/MICROSAR/BswM_swc/ESH_RunRequest/REQUESTED</SD>
+                                    <SD GID="ed427821-0df9-41ad-8d16-10983beaec96">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode</SD>
+                                    <SD GID="e1f9c23e-6e28-48f4-aa46-f66f3fa139c5">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode/BswM_MDGP_ESH_Mode</SD>
+                                    <SD GID="8dcfd7a0-9f4a-4cec-84fb-7ef63df663d7">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_RunRequest/BswM_MDGP_ESH_RunRequest</SD>
+                                    <SD GID="41d5c0d9-4aa8-4aa2-bb82-0c4d41ec0096">/MICROSAR/BswM_swc/Interfaces/BswM_SRI_BswM_MSI_ESH_RunRequest_BswM_MDGP_ESH_RunRequest</SD>
+                                    <SD GID="32f60790-3058-4d9d-b2dc-10a32e9a9a49">/MICROSAR/BswM_swc/Interfaces/BswM_SRI_BswM_MSI_ESH_RunRequest_BswM_MDGP_ESH_RunRequest/requestedMode</SD>
+                                    <SD GID="a4079cd9-89ea-4f4a-9706-2549945d0630">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior</SD>
+                                    <SD GID="9a2858b7-a842-4434-8531-d790fb8dd6a6">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="9deefc8c-e6a6-41a7-b4d9-7aab1a238646">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="cd8be34a-c406-4e26-9d45-7a32ceb03f3e">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="ba332bb8-d4a3-4301-8bc9-601d9b046b04">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="9585b5ff-2e59-4b20-ba42-3250277cee43">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="4ab14578-b354-4126-bdf4-ebdeb2b83b70">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="0eb9b06e-e244-407d-8a45-aa915f6ab6f2">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="572a12aa-0635-43c0-91e6-b3430c18fc1a">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_7</SD>
+                                    <SD GID="86fc4256-e468-4a4c-9950-dc8710a94c30">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior</SD>
+                                    <SD GID="964c14bd-580e-4479-ab4e-037cca5f6eb4">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="69ba7312-9204-4e26-b350-8c07ae7ef566">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="8c6dbefe-2c5d-412c-a8da-2890911e68db">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="171f27d0-eb64-4c01-894a-e803096bd6f5">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="1c07f752-10df-4ab0-9901-e75d4e0c89ac">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="c89f5f00-d856-4347-9dc4-4ba79a154c3c">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="85c6cddb-b312-42e5-b8f0-fbc5b963319d">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CanSM_MainFunction</SD>
+                                    <SD GID="e3cb1593-f2cd-42a6-80d1-807d397a71c1">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CanSM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="21f506d8-6261-4236-a391-585f31f4bc32">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM_MainFunction</SD>
+                                    <SD GID="05964228-5636-4ac4-a85f-9abc211c914d">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp/CanTpBehavior</SD>
+                                    <SD GID="8b275a56-fb53-4585-8e29-20e3f1bffba1">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp/CanTpBehavior/CANTP_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="9fc99487-b28d-4e43-807b-33f900fbd9c3">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp/CanTpBehavior/CanTp_MainFunction</SD>
+                                    <SD GID="f9c23281-0fd3-4f8d-bfe3-abe4694c184f">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp/CanTpBehavior/CanTp_MainFunctionTimingEvent0</SD>
+                                    <SD GID="4dd01815-a1de-41c6-bc44-00a62e983830">/MICROSAR/CanTp_ib_bswmd/BswModuleDescriptions/CanTp_MainFunction</SD>
+                                    <SD GID="9c632e30-375b-480a-b41f-fecb42079a3b">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior</SD>
+                                    <SD GID="318f3523-4136-4118-a66f-a23ff8ca6b88">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/CAN_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="8b7c6e8f-9db7-4cf2-88d0-789547a616d0">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/CAN_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="b3cb593c-ac85-42f5-a048-e5a8cf9b709e">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/CAN_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="a76a81c5-f054-46e3-a975-5d3cb365a0c3">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/CAN_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="4d4a44e8-abd9-4706-845d-be4ee45eb481">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/CAN_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="874565f3-ca5d-4a3f-84ab-77b0578deeb5">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/CAN_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="4387d208-a5c6-4ed0-9862-33f64c420665">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/CAN_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="3bffad41-7e40-41b9-a820-85c18b0a428f">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/Can_MainFunction_BusOff</SD>
+                                    <SD GID="c333cc9f-f672-4e5d-9c93-761b0dd1eb93">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/Can_MainFunction_BusOffTimingEvent0</SD>
+                                    <SD GID="787d0b21-7deb-425b-b7d7-5fff6af8029c">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/Can_MainFunction_Mode</SD>
+                                    <SD GID="e02812fd-9929-454f-8309-eb88032ce95e">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/Can_MainFunction_ModeTimingEvent0</SD>
+                                    <SD GID="953a7fc1-091c-448e-9dec-7f1a5b3bff13">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/Can_MainFunction_Wakeup</SD>
+                                    <SD GID="0731503c-7d0a-47c5-9d51-f6a3635c441a">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can/Can_ImxFlexcan3_Behavior/Can_MainFunction_WakeupTimingEvent0</SD>
+                                    <SD GID="3506b8ac-318c-4395-a729-e72d7f11eaa5">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can_MainFunction_BusOff</SD>
+                                    <SD GID="0e799301-eb62-476e-bfbd-d73ce1a69ba3">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Mode</SD>
+                                    <SD GID="c527f237-a154-48d3-a715-16fec1d51a5d">/MICROSAR/Can_ImxFlexcan3_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Wakeup</SD>
+                                    <SD GID="b4aa4842-e1d9-4112-a583-cddc2f981529">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior</SD>
+                                    <SD GID="8dafed1b-baf6-4b5c-899b-ab572e165d7d">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="f0084693-b9c6-40f6-827d-2c81b2e1f18a">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="20f37c40-acd1-4fd2-bfec-790317d03740">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/ComM_MainFunction_0</SD>
+                                    <SD GID="970d55a1-9514-46ff-8e2b-3cf36764594e">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/ComM_MainFunction_0TimingEvent0</SD>
+                                    <SD GID="e0a24cc6-e40a-4c12-9fb9-ab35a52d42be">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM_MainFunction_0</SD>
+                                    <SD GID="de2a1612-8611-4ed0-b9de-290c6cea9da5">/MICROSAR/ComM_swc/ComMMode</SD>
+                                    <SD GID="b0c4771c-500c-44cf-85da-90b56d3154f9">/MICROSAR/ComM_swc/ComMMode/COMM_NO_COMMUNICATION</SD>
+                                    <SD GID="7e2ef4ab-06c4-4d88-ac76-e7adda8494c7">/MICROSAR/ComM_swc/ComMMode_DataTypeMappingSet</SD>
+                                    <SD GID="b78760e9-8d70-4c20-8bbf-6ba9977aff49">/MICROSAR/ComM_swc/ComponentTypes/ComM</SD>
+                                    <SD GID="e6b27dee-4618-40aa-a4e6-7e6aaf2c233d">/MICROSAR/ComM_swc/ComponentTypes/ComM/CL_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="f9bf9e2b-f3c3-4fe1-9a85-1a9a8c9fb3e6">/MICROSAR/ComM_swc/ComponentTypes/ComM/CW_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="9c724bd5-5c46-424b-bc92-38962f981527">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior</SD>
+                                    <SD GID="687547d3-d05b-4fe9-9e5c-1024208f9e41">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ComM_MainFunction_0</SD>
+                                    <SD GID="4ab185ed-0618-4655-8a18-569b59d71a69">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetCurrentComMode</SD>
+                                    <SD GID="d91bd341-3688-49b1-b6a2-ef6035b952da">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetInhibitionStatus</SD>
+                                    <SD GID="1ee42388-ed25-4832-8f30-e536c4485373">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetMaxComMode</SD>
+                                    <SD GID="ea2270b1-3bf6-4dcb-a173-b6f89d177bbe">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetRequestedComMode</SD>
+                                    <SD GID="af8d4c0e-9769-4444-bf82-2ee53c6b2c00">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/LimitChannelToNoComMode</SD>
+                                    <SD GID="71e59c9d-684d-4ad0-85ce-0c938ff629cd">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/LimitECUToNoComMode</SD>
+                                    <SD GID="8a04f60f-9977-48bb-bdb2-bca4ce4d55a3">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetCurrentComMode_GetCurrentComMode_UR_CN_CAN00_06ecbb07</SD>
+                                    <SD GID="feb4175d-c02b-4726-af8c-a905760b150f">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetInhibitionStatus_GetInhibitionStatus_CL_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="0c997abe-f130-4025-ba11-92a94207a9a8">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetInhibitionStatus_GetInhibitionStatus_CW_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="2f12e851-9ecc-473a-966c-005f9dd46c7e">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetMaxComMode_GetMaxComMode_UR_CN_CAN00_06ecbb07</SD>
+                                    <SD GID="cdf13a77-39ec-4178-bc6a-4e76abb5e8b6">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetRequestedComMode_GetRequestedComMode_UR_CN_CAN00_06ecbb07</SD>
+                                    <SD GID="04237c8d-38de-4854-aec3-43c3bbd8c7cc">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventLimitChannelToNoComMode_LimitChannelToNoComMode_CL_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="e3de6075-96b8-424d-8525-032e64e62be1">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventLimitECUToNoComMode_LimitECUToNoComMode_modeLimitation</SD>
+                                    <SD GID="60b3a6d0-99c7-41f6-b58c-fd8f8accc7e7">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventPreventWakeUp_PreventWakeUp_CW_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="fec25166-e7f0-44b6-8c76-3e0c45738d38">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventReadInhibitCounter_ReadInhibitCounter_modeLimitation</SD>
+                                    <SD GID="e779bf4a-d48d-474f-9087-69d4b4d32222">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventRequestComMode_RequestComMode_UR_CN_CAN00_06ecbb07</SD>
+                                    <SD GID="799655f3-93e1-4ee8-8c7f-96518f95befe">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventResetInhibitCounter_ResetInhibitCounter_modeLimitation</SD>
+                                    <SD GID="9cb906a8-a847-4701-bc30-6a760212feea">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventSetECUGroupClassification_SetECUGroupClassification_modeLimitation</SD>
+                                    <SD GID="d61d9726-1df0-457f-ae5b-bd26cfea03fe">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/PreventWakeUp</SD>
+                                    <SD GID="704b1388-471a-477a-8498-3b5b5940bcc1">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ReadInhibitCounter</SD>
+                                    <SD GID="1c1ef15e-828f-47c8-a27e-756c9bf16a12">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/RequestComMode</SD>
+                                    <SD GID="30dd5dad-ce0d-49e1-be88-44122ff2c29f">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ResetInhibitCounter</SD>
+                                    <SD GID="524969a9-82b8-4fec-9c61-80754e2e6a88">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/SetECUGroupClassification</SD>
+                                    <SD GID="b6d6e435-6854-41fe-a109-4e3a3580b8d0">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/Timer_ComM_MainFunction_0</SD>
+                                    <SD GID="1e77b9cf-06ed-4519-8be6-82b61b00d1a4">/MICROSAR/ComM_swc/ComponentTypes/ComM/UR_CN_CAN00_06ecbb07</SD>
+                                    <SD GID="2bafc45c-2b77-487f-a3f2-0716fb4a107e">/MICROSAR/ComM_swc/ComponentTypes/ComM/modeLimitation</SD>
+                                    <SD GID="3cbd9659-5b0a-4c7d-ba25-9515cf14ea12">/MICROSAR/ComM_swc/DataTypes/ComM_InhibitionStatusType</SD>
+                                    <SD GID="b93d10db-f1a3-4c55-8dbc-03b9214ad3a6">/MICROSAR/ComM_swc/DataTypes/ComM_ModeType</SD>
+                                    <SD GID="c15f1369-3894-403e-9d67-64cd04b01ed1">/MICROSAR/ComM_swc/DataTypes/ComM_UserHandleType</SD>
+                                    <SD GID="884a00a0-7a9a-4806-be3b-e0868ef79007">/MICROSAR/ComM_swc/DataTypes/CompuMethods/ComM_ModeType</SD>
+                                    <SD GID="093ca11b-eca6-485a-ba98-5fd9401227c9">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_InhibitionStatusType_Constr</SD>
+                                    <SD GID="53f8913a-0c9e-44dc-8c2b-991ef69084bc">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_ModeType_Constr</SD>
+                                    <SD GID="cfab278d-a48c-40ed-ac88-f984ee5f41ae">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_UserHandleType_Constr</SD>
+                                    <SD GID="7afa38b5-ed69-4df5-8811-f8398224f95d">/MICROSAR/ComM_swc/DataTypes/DataConstrs/NetworkHandleType_Constr</SD>
+                                    <SD GID="76c65ebb-5b3a-473c-9860-242b5bf36b42">/MICROSAR/ComM_swc/DataTypes/NetworkHandleType</SD>
+                                    <SD GID="5e232023-0330-46e9-8e0c-75e177240070">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation</SD>
+                                    <SD GID="d6b56ec5-3213-4e83-809d-2f9ee3d999bc">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/E_NOT_OK</SD>
+                                    <SD GID="49a4187d-b265-424a-aeaa-1537f6ff500d">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/GetInhibitionStatus</SD>
+                                    <SD GID="bcd89097-13d4-4ead-9fa9-04faf807ea99">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/LimitChannelToNoComMode</SD>
+                                    <SD GID="1fbbaa7f-1860-4093-b335-a93c7fabf916">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp</SD>
+                                    <SD GID="e8cd3356-194b-4382-85ae-160d347b42c3">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/E_NOT_OK</SD>
+                                    <SD GID="7c9c97d6-ec83-43b2-9aa4-dcf23ff4e813">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/GetInhibitionStatus</SD>
+                                    <SD GID="71553321-37cd-4408-b9db-15400f289963">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/PreventWakeUp</SD>
+                                    <SD GID="936b0862-35c5-4954-b6a9-e598244623ff">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation</SD>
+                                    <SD GID="51604672-5bee-4972-b9d3-f63d9c9d7277">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/E_NOT_OK</SD>
+                                    <SD GID="a31fd993-9a43-4eaa-a898-dfa3a8724b0f">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/LimitECUToNoComMode</SD>
+                                    <SD GID="33ec7d0d-1750-4347-913a-2744e56e5e6a">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/ReadInhibitCounter</SD>
+                                    <SD GID="4fdf2a7f-6c72-4947-89f9-92b578ea4b0e">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/ResetInhibitCounter</SD>
+                                    <SD GID="3e343d2b-4013-415f-9641-e7e45a18caac">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/SetECUGroupClassification</SD>
+                                    <SD GID="3e8227be-1323-4c87-976d-c7cee4052098">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest</SD>
+                                    <SD GID="f407d953-b85f-4a1a-b735-2ab72e2b8e94">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/E_MODE_LIMITATION</SD>
+                                    <SD GID="83d095c6-7e98-4faa-b408-a9e3b27fe973">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/E_NOT_OK</SD>
+                                    <SD GID="ffc14f72-1af8-475a-94ce-e48b110d3867">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetCurrentComMode</SD>
+                                    <SD GID="900f8711-c992-4ddf-a45a-798fd8723080">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetMaxComMode</SD>
+                                    <SD GID="349fd733-1e41-40d4-a892-fc63cba2a266">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetRequestedComMode</SD>
+                                    <SD GID="6ad8dea2-946b-4e81-94af-d739a1cf5ae8">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</SD>
+                                    <SD GID="c4a076c9-7593-47e8-9121-d0dddd673f35">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior</SD>
+                                    <SD GID="f096bcbb-9887-4be6-8f1a-31142dff632c">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_BOTH</SD>
+                                    <SD GID="ae775d57-f633-4981-be96-96381c7168aa">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_RX</SD>
+                                    <SD GID="0aaa2cb4-e4c2-4130-a6a7-519228337c49">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_TX</SD>
+                                    <SD GID="eb9f565c-3636-4696-babb-e4a135439fb9">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionRx</SD>
+                                    <SD GID="920dfb73-076d-433c-9fe7-99ea734c710a">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionRxTimingEvent0</SD>
+                                    <SD GID="c8652075-b2d5-4be7-8e6d-302f8aa9f56b">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionTx</SD>
+                                    <SD GID="1cff42aa-8a08-4ae5-a25e-c913fe99e4e5">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionTxTimingEvent0</SD>
+                                    <SD GID="76458833-db0a-4f9e-b8fc-67da9796da7e">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_MainFunctionRx</SD>
+                                    <SD GID="e99fedb5-a970-42d1-8923-66b4a9731c55">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_MainFunctionTx</SD>
+                                    <SD GID="c10e6aa1-7986-4e46-b5ac-96d9e9ef7c68">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm/DcmBehavior</SD>
+                                    <SD GID="4beedd6e-ae21-4403-a948-fef1d8a9f3b9">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm/DcmBehavior/DCM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="e0ece668-2351-4752-8a7a-ca941d992ea3">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm/DcmBehavior/Dcm_MainFunction</SD>
+                                    <SD GID="a0a0b107-d36b-47f0-8fa2-3f5656a4415a">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm/DcmBehavior/Dcm_MainFunctionTimingEvent0</SD>
+                                    <SD GID="cfcaa745-e42c-4261-b2da-0b7800322652">/MICROSAR/Dcm_ib_bswmd/BswModuleDescriptions/Dcm_MainFunction</SD>
+                                    <SD GID="fca298f1-12c1-4fdc-994b-48a630198699">/MICROSAR/Dcm_swc/ComponentTypes/Dcm</SD>
+                                    <SD GID="1ef9199b-8afa-4c8e-9c9a-f6f98491d120">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DCMServices</SD>
+                                    <SD GID="a2fe51c6-b601-4039-8395-01d39962eee9">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</SD>
+                                    <SD GID="edcefac9-3853-4512-8920-5813b04f11d6">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmControlDtcSetting</SD>
+                                    <SD GID="52ba4595-76d1-4a2b-b040-c0a9a795857a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmDiagnosticSessionControl</SD>
+                                    <SD GID="cb85f008-b398-4560-b069-64a037beb731">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmEcuReset</SD>
+                                    <SD GID="18bba8c2-47e8-410d-b9d5-3160bfb2f3d3">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior</SD>
+                                    <SD GID="b9421cd6-6b09-4ae2-bcc3-107dfe96bd6b">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Dcm_MainFunction</SD>
+                                    <SD GID="ca5ca55d-1fdd-42f0-a336-dde18b98d159">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetActiveProtocol</SD>
+                                    <SD GID="7f2a3f75-d23d-4d47-b19a-c4872414b36b">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetRequestKind</SD>
+                                    <SD GID="0c43551e-1003-4a21-b6e0-b765523519cb">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetSecurityLevel</SD>
+                                    <SD GID="e25595b7-f3a1-469c-9614-bd30ad8e5ccb">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/GetSesCtrlType</SD>
+                                    <SD GID="d4ad760f-7d5f-4dd5-9f07-f8dd57ecdff8">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventGetActiveProtocol_GetActiveProtocol_DCMServices</SD>
+                                    <SD GID="68bbb68e-b7a2-498b-ad2c-f222526da94e">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventGetRequestKind_GetRequestKind_DCMServices</SD>
+                                    <SD GID="e1f27e3c-3630-4ec1-8dbc-40b5cadb71e0">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventGetSecurityLevel_GetSecurityLevel_DCMServices</SD>
+                                    <SD GID="ee8ca5f8-b805-46e9-b1ba-73a140798b0a">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventGetSesCtrlType_GetSesCtrlType_DCMServices</SD>
+                                    <SD GID="738ad23e-3779-4c1d-b862-bbd918b1c08f">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventResetToDefaultSession_ResetToDefaultSession_DCMServices</SD>
+                                    <SD GID="a9d1cec6-094e-4713-998b-ab97a33916f0">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/OpEventSetActiveDiagnostic_SetActiveDiagnostic_DCMServices</SD>
+                                    <SD GID="28c84772-5241-4830-9009-e7686974476e">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/ResetToDefaultSession</SD>
+                                    <SD GID="495c961b-95be-4c86-ba5a-6466636bf867">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/SetActiveDiagnostic</SD>
+                                    <SD GID="a17ba097-8b8c-497d-bf50-0e7dc864fbc4">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/DcmInternalBehavior/Timer_Dcm_MainFunction</SD>
+                                    <SD GID="cd96f49b-5ea1-421c-a77b-c1aef8ba9236">/MICROSAR/Dcm_swc/ComponentTypes/Dcm/SecurityAccess_Level_01</SD>
+                                    <SD GID="1eee2504-9162-4163-8c93-613aac2e1109">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_CommunicationModeType</SD>
+                                    <SD GID="5b259c77-2340-47e7-98af-27dbd6e885b1">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_ConfirmationStatusType</SD>
+                                    <SD GID="d6db07a0-8492-4c73-a2e5-4a615ec79866">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_ControlDtcSettingType</SD>
+                                    <SD GID="03fd145a-2f8b-4399-8e1d-454398cc0f1e">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_DiagnosticSessionControlType</SD>
+                                    <SD GID="e4210476-8bca-4ec0-9990-2ec163945914">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_EcuResetType</SD>
+                                    <SD GID="f7139241-a2ac-487f-80df-ef85cf0ebf72">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_NegativeResponseCodeType</SD>
+                                    <SD GID="b14ee960-1308-4b3c-8586-73df3555039e">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_OpStatusType</SD>
+                                    <SD GID="555351c1-873b-415f-87a0-ee379bf71932">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_ProtocolType</SD>
+                                    <SD GID="ef789cf1-403e-4716-bd7a-18c2ca21d254">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_RequestKindType</SD>
+                                    <SD GID="9e72955f-3b13-46a5-901e-dbffb29a5b66">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_SecLevelType</SD>
+                                    <SD GID="d70838b7-51ad-4ece-b0a4-bfe04385fadd">/MICROSAR/Dcm_swc/DataTypes/CompuMethods/Dcm_SesCtrlType</SD>
+                                    <SD GID="9476a483-8d0a-4f8b-aa6b-a7a591d442e4">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_CommunicationModeType_Constr</SD>
+                                    <SD GID="7d538028-07fd-4cba-851e-b74c24c9a31e">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_ConfirmationStatusType_Constr</SD>
+                                    <SD GID="d0d19b9b-c3cf-4167-80b7-af9318298c72">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_ControlDtcSettingType_Constr</SD>
+                                    <SD GID="d99653be-cc4d-406f-b46c-4c0fbd68215d">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_DiagnosticSessionControlType_Constr</SD>
+                                    <SD GID="a165c08e-9f72-4111-8988-dd42dc4688d0">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_EcuResetType_Constr</SD>
+                                    <SD GID="52523c06-7e9e-4784-bef8-1af9fec66660">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_NegativeResponseCodeType_Constr</SD>
+                                    <SD GID="6339736d-dc3b-4c43-b7f5-0375c87187d6">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_OpStatusType_Constr</SD>
+                                    <SD GID="15934339-c35e-401d-b945-4a46accf2040">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_ProtocolType_Constr</SD>
+                                    <SD GID="dcbfdade-7f70-4a15-8f78-5b18d043aa45">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_RequestKindType_Constr</SD>
+                                    <SD GID="23badc01-914c-4f17-bfcc-544c2f9e96ad">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_SecLevelType_Constr</SD>
+                                    <SD GID="e89d2c91-5f06-4686-8365-34a8cae72632">/MICROSAR/Dcm_swc/DataTypes/DataConstrs/Dcm_SesCtrlType_Constr</SD>
+                                    <SD GID="503b699a-f97e-4444-883b-476e50404a2d">/MICROSAR/Dcm_swc/DataTypes/Dcm_CommunicationModeType</SD>
+                                    <SD GID="d6ed9ef1-7501-4d95-bffe-fdb9fdf8e2ac">/MICROSAR/Dcm_swc/DataTypes/Dcm_ConfirmationStatusType</SD>
+                                    <SD GID="60ddd238-cc5d-41d2-880b-3f304598940f">/MICROSAR/Dcm_swc/DataTypes/Dcm_ControlDtcSettingType</SD>
+                                    <SD GID="650da900-7d44-4d3d-a500-8b9de1cdc233">/MICROSAR/Dcm_swc/DataTypes/Dcm_Data2ByteType</SD>
+                                    <SD GID="49bec934-01f8-4ae4-a993-0e8b5d6b6fba">/MICROSAR/Dcm_swc/DataTypes/Dcm_Data4ByteType</SD>
+                                    <SD GID="a5ed9eca-1d70-49f7-9f91-6619041078e3">/MICROSAR/Dcm_swc/DataTypes/Dcm_DiagnosticSessionControlType</SD>
+                                    <SD GID="717b459a-6da1-4dad-bae3-b3ec0e45f9be">/MICROSAR/Dcm_swc/DataTypes/Dcm_EcuResetType</SD>
+                                    <SD GID="fa64adc1-760f-4889-9e9e-5ccf9f7f81a6">/MICROSAR/Dcm_swc/DataTypes/Dcm_NegativeResponseCodeType</SD>
+                                    <SD GID="314d9792-dc61-4339-bb2d-fe3161ab6f78">/MICROSAR/Dcm_swc/DataTypes/Dcm_OpStatusType</SD>
+                                    <SD GID="daadfe5c-e073-4e5d-b36c-23495e6bac8a">/MICROSAR/Dcm_swc/DataTypes/Dcm_ProtocolType</SD>
+                                    <SD GID="646e8aa2-a714-494a-bce5-b904582b518d">/MICROSAR/Dcm_swc/DataTypes/Dcm_RequestKindType</SD>
+                                    <SD GID="3331b057-6705-4eca-8844-ebf50a279986">/MICROSAR/Dcm_swc/DataTypes/Dcm_SecLevelType</SD>
+                                    <SD GID="9c9bf423-b2a4-4993-8ebc-cbb8cfa50008">/MICROSAR/Dcm_swc/DataTypes/Dcm_SesCtrlType</SD>
+                                    <SD GID="8715ce11-2e39-48cd-a4bb-434cea2f0109">/MICROSAR/Dcm_swc/DcmControlDtcSetting</SD>
+                                    <SD GID="c2a47a4d-9b43-4931-97d7-62f2d77557f3">/MICROSAR/Dcm_swc/DcmControlDtcSetting/ENABLEDTCSETTING</SD>
+                                    <SD GID="b151ff67-e1d7-4801-b13e-e157dff8d60a">/MICROSAR/Dcm_swc/DcmDiagnosticSessionControl</SD>
+                                    <SD GID="57f09daf-91cd-4ccb-8733-9f39a8057f98">/MICROSAR/Dcm_swc/DcmDiagnosticSessionControl/DEFAULT_SESSION</SD>
+                                    <SD GID="ba4e18d4-ba41-4f88-84f2-71efada58edc">/MICROSAR/Dcm_swc/DcmEcuReset</SD>
+                                    <SD GID="1ba8f299-afb7-4b4c-9947-55bccf4cba51">/MICROSAR/Dcm_swc/DcmEcuReset/NONE</SD>
+                                    <SD GID="b20113ba-89fd-46d0-aa64-908a56b1f671">/MICROSAR/Dcm_swc/DcmMappingSet</SD>
+                                    <SD GID="5a553fac-9869-4cf0-a385-5b88073d1857">/MICROSAR/Dcm_swc/Interfaces/DCMServices</SD>
+                                    <SD GID="dddac11b-1ee3-4125-ba97-5008e06b857e">/MICROSAR/Dcm_swc/Interfaces/DCMServices/E_NOT_OK</SD>
+                                    <SD GID="a60d99a2-90c0-4588-8e9b-c8455f0319c2">/MICROSAR/Dcm_swc/Interfaces/DCMServices/E_OK</SD>
+                                    <SD GID="e5263c55-c37c-4722-981f-36a761850b51">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetActiveProtocol</SD>
+                                    <SD GID="e0b9948c-949c-404e-ae48-13cdc7f2b9e1">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetRequestKind</SD>
+                                    <SD GID="ae9acb9e-3b08-4c75-b6f1-51e9ed402154">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetSecurityLevel</SD>
+                                    <SD GID="6a153e94-112e-4eb5-8688-f9ce5197b524">/MICROSAR/Dcm_swc/Interfaces/DCMServices/GetSesCtrlType</SD>
+                                    <SD GID="4e846ff8-b63e-4fc7-99ae-784b9e8ad36f">/MICROSAR/Dcm_swc/Interfaces/DCMServices/ResetToDefaultSession</SD>
+                                    <SD GID="0553af53-b0c7-4ced-bc6d-0b278f09877f">/MICROSAR/Dcm_swc/Interfaces/DCMServices/SetActiveDiagnostic</SD>
+                                    <SD GID="d99b5d69-e440-4ca1-b923-627e946717d5">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value</SD>
+                                    <SD GID="05d836de-280e-459e-b540-5b48c5b52810">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ConditionCheckRead</SD>
+                                    <SD GID="d27cafa6-1ba4-49ea-80e0-9287d0b1013d">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/DCM_E_PENDING</SD>
+                                    <SD GID="73993b00-f396-41ad-b95e-f850e9cedfcd">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/E_NOT_OK</SD>
+                                    <SD GID="5834a40a-335c-4ff2-a9ad-6b848b9aac4e">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/ReadData</SD>
+                                    <SD GID="789e0c88-52e9-4a10-9758-545109489f6f">/MICROSAR/Dcm_swc/Interfaces/DataServices_Diag_RWDI_LightOnOffCounter_LightOnOffCounter_Value/WriteData</SD>
+                                    <SD GID="d3b0e91b-d05a-41b8-885b-3cf1aa54f77d">/MICROSAR/Dcm_swc/Interfaces/DcmControlDtcSetting</SD>
+                                    <SD GID="acd64a53-5173-4276-ba35-c194a41f0de6">/MICROSAR/Dcm_swc/Interfaces/DcmControlDtcSetting/DcmControlDtcSetting</SD>
+                                    <SD GID="2b0030d9-7e92-4a9c-87b4-c8c19bf855e8">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl</SD>
+                                    <SD GID="60acdc08-f3f8-4244-9046-c9e9ff9433e8">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl/DcmDiagnosticSessionControl</SD>
+                                    <SD GID="ee54e99a-057b-4cf3-bb08-ac89dbdf80ac">/MICROSAR/Dcm_swc/Interfaces/DcmEcuReset</SD>
+                                    <SD GID="328df192-f8a2-439f-93ff-83fcffdd05c4">/MICROSAR/Dcm_swc/Interfaces/DcmEcuReset/DcmEcuReset</SD>
+                                    <SD GID="459eb7ec-213e-4a50-b665-5fb28bd9c5dc">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01</SD>
+                                    <SD GID="f64f22c7-6cdc-4344-ab27-1fbd31cf815a">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/CompareKey</SD>
+                                    <SD GID="7b716ec2-7bed-4651-9dbf-65810f2f3e05">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/DCM_E_COMPARE_KEY_FAILED</SD>
+                                    <SD GID="0a0c0960-c09a-4605-932e-8697c1ba5337">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/DCM_E_PENDING</SD>
+                                    <SD GID="b5f7863d-6cdc-4e28-8db3-81d99507e064">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/E_NOT_OK</SD>
+                                    <SD GID="8734dd62-c3d7-47b8-9054-41f3e1b33a1b">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_01/GetSeed</SD>
+                                    <SD GID="bb9520ae-88be-40f1-8b1c-9709300d1a7e">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/ClearDTC_DemClient</SD>
+                                    <SD GID="2c4c808f-9092-4456-b5fa-e3fc37355757">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/ClearDTC</SD>
+                                    <SD GID="f3c9041c-58cf-44e3-bbf8-bfff364aac71">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/GetEventMemoryOverflow</SD>
+                                    <SD GID="5e10e72c-02e4-4359-8ed8-a4660d4060a2">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/GetNumberOfEventMemoryEntries</SD>
+                                    <SD GID="4c78e9ac-8acc-4b2d-83f1-82d369117a9c">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventClearDTC_ClearDTC_ClearDTC_DemClient</SD>
+                                    <SD GID="c9fcab52-59b5-4828-ac37-12867aab0ed8">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_GeneralEvtInfo</SD>
+                                    <SD GID="328b5a01-3e36-4a0d-b3da-33a4c9f28744">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetDTCStatusAvailabilityMask_GetDTCStatusAvailabilityMask_DemServices</SD>
+                                    <SD GID="a84e5d64-4f04-45cc-9092-167cc4b03b7b">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_GeneralEvtInfo</SD>
+                                    <SD GID="9eea108e-d567-4983-ab34-23358a2cb71b">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_GeneralEvtInfo</SD>
+                                    <SD GID="9795211a-d911-417f-99bd-f5b1b969b84d">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_GeneralEvtInfo</SD>
+                                    <SD GID="ff9aa0f9-5056-4cdb-b719-fbc1d55b2114">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_GeneralEvtInfo</SD>
+                                    <SD GID="817d9881-efb7-4dbe-9d14-471e4b3f9744">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_GeneralEvtInfo</SD>
+                                    <SD GID="916b36b0-663c-4068-9f0a-380b729e6979">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventMemoryOverflow_GetEventMemoryOverflow_OverflowIndPrimaryMemory_DemClient</SD>
+                                    <SD GID="93bcda48-4aa0-4990-9f57-41b6124aee37">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_GeneralEvtInfo</SD>
+                                    <SD GID="f8d7662f-3f93-48a9-853a-59cdd61f81f3">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventTested_GetEventTested_GeneralEvtInfo</SD>
+                                    <SD GID="5cfe9c7f-e6b8-4067-882b-bb4d4dc9e586">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_GeneralEvtInfo</SD>
+                                    <SD GID="4c9f610f-a619-4d1a-9722-ec370122bb07">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_GeneralEvtInfo</SD>
+                                    <SD GID="58967823-805d-44a9-8801-f166da53543a">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_GeneralEvtInfo</SD>
+                                    <SD GID="0d8c003e-9893-41d9-909f-837bd0482e69">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetNumberOfEventMemoryEntries_GetNumberOfEventMemoryEntries_OverflowIndPrimaryMemory_DemClient</SD>
+                                    <SD GID="61910909-28bd-4aa3-9dba-402f0b0a0d20">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetOperationCycleState_GetOperationCycleState_OpCycle_IgnitionCycle</SD>
+                                    <SD GID="b8ec13ba-4d05-4fc8-ac3c-8a0c97b8b5a4">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventGetOperationCycleState_GetOperationCycleState_OpCycle_PowerCycle</SD>
+                                    <SD GID="22fe0bbf-8bd6-4f8f-8c58-6c7ffc9994c1">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventPostRunRequested_GetPostRunRequested_DemServices</SD>
+                                    <SD GID="087bb384-3990-46cb-9996-7a9c78e91e3e">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventSelectDTC_SelectDTC_ClearDTC_DemClient</SD>
+                                    <SD GID="25cdf7f8-ee76-46b8-a6e7-c593356b52b8">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventSetOperationCycleState_SetOperationCycleState_OpCycle_IgnitionCycle</SD>
+                                    <SD GID="199f42f2-d548-486d-9b30-85e767f3f67e">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/OpEventSetOperationCycleState_SetOperationCycleState_OpCycle_PowerCycle</SD>
+                                    <SD GID="08052f58-cf19-4bd1-91fe-30eb8000c9dc">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/SelectDTC</SD>
+                                    <SD GID="c972502f-a60b-4eca-87b1-0cce5c3eba0d">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/DemMaster_0InternalBehavior/Timer_Dem_MasterMainFunction</SD>
+                                    <SD GID="e9edad90-7a5d-4d4f-8bbe-50144cc1e93f">/MICROSAR/Dem_swc/ComponentTypes/DemMaster_0/OverflowIndPrimaryMemory_DemClient</SD>
+                                    <SD GID="80d15fa7-101a-421e-bb44-1958e48eec72">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_Event_DTC_0x000002</SD>
+                                    <SD GID="4c042dff-bf96-42aa-acf7-427befa61c03">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="d2b9a722-0e1a-45f1-a99d-923669bf9a64">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDTCOfEvent_GetDTCOfEvent_GeneralEvtInfo</SD>
+                                    <SD GID="6048784d-7a22-4e7f-9113-723a1640bb25">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="3e1fb2af-d972-429a-9473-854d1d0c02b0">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetDebouncingOfEvent_GetDebouncingOfEvent_GeneralEvtInfo</SD>
+                                    <SD GID="c3bab82c-61c7-491d-864e-25f50ce0433c">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="272ec2c2-14ca-4942-8002-f426e9a95419">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventEnableCondition_GetEventEnableCondition_GeneralEvtInfo</SD>
+                                    <SD GID="359571dc-9ca6-4a5b-a5d0-aa3b0b5b9fb7">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_Event_DTC_0x000002</SD>
+                                    <SD GID="1e969ca3-3d0b-495d-9302-32e601fadefe">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="4979e8d5-79d8-4951-8e2f-d0fa4f91d60a">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventExtendedDataRecordEx_GetEventExtendedDataRecordEx_GeneralEvtInfo</SD>
+                                    <SD GID="5cd89829-bff4-4685-ba52-d1f15b4c23ad">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_Event_DTC_0x000002</SD>
+                                    <SD GID="2389794f-2f66-4497-b7e1-85b1f3026f2d">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="5f4d1fc2-70d0-4e56-9d20-703f879d3958">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFailed_GetEventFailed_GeneralEvtInfo</SD>
+                                    <SD GID="4b62ac76-0337-494c-9445-90a8f375f0d5">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_Event_DTC_0x000002</SD>
+                                    <SD GID="bcd939c1-289d-4639-bf77-2f0df9d7731c">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="30b558ed-095b-4897-859c-78a9c9c9a932">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventFreezeFrameDataEx_GetEventFreezeFrameDataEx_GeneralEvtInfo</SD>
+                                    <SD GID="ecd1ce39-ad5d-496e-8274-f6dd99dc360e">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_Event_DTC_0x000002</SD>
+                                    <SD GID="c75caf6d-b00d-45d6-802f-a5008026638b">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="23fe3830-c1f5-4037-9f81-e76943f7e848">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventStatus_GetEventStatus_GeneralEvtInfo</SD>
+                                    <SD GID="c0c9c7c1-19f1-47ca-a060-ede361e6e962">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_Event_DTC_0x000002</SD>
+                                    <SD GID="ed4326fc-5ade-4509-8dcf-26299bf22c66">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="cd8cd836-2d90-4af3-8b8a-2cf0c9646b14">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventTested_GetEventTested_GeneralEvtInfo</SD>
+                                    <SD GID="b675c7ad-fe4d-4348-9afd-8790d561fe2e">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_Event_DTC_0x000002</SD>
+                                    <SD GID="f88a1878-7126-4e5e-b245-9c2c4dc8db7b">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="7d615400-4268-4fb4-84db-5c47510f825d">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetEventUdsStatus_GetEventUdsStatus_GeneralEvtInfo</SD>
+                                    <SD GID="b35c1b80-7ca5-4716-ae71-93445fbc4165">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_Event_DTC_0x000002</SD>
+                                    <SD GID="7b4125e1-8a81-414d-a56f-fe4292d68d59">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="2caf84e9-a562-4ce1-ae54-50ff928eb432">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetFaultDetectionCounter_GetFaultDetectionCounter_GeneralEvtInfo</SD>
+                                    <SD GID="e0a50d51-6419-483f-91da-f793ca295d86">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_EvtInfo_DTC_0x000002</SD>
+                                    <SD GID="84671072-9ae4-491d-a89b-7c181549af10">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventGetMonitorStatus_GetMonitorStatus_GeneralEvtInfo</SD>
+                                    <SD GID="9ff1aa05-4e39-454d-a3af-629f5df3f8b3">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventDebounceStatus_ResetEventDebounceStatus_Event_DTC_0x000002</SD>
+                                    <SD GID="17916798-fa52-45ac-80e0-4ac894751127">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventResetEventStatus_ResetEventStatus_Event_DTC_0x000002</SD>
+                                    <SD GID="d62f3e10-9b53-46ec-a3ca-e40675430d43">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/OpEventSetEventStatus_SetEventStatus_Event_DTC_0x000002</SD>
+                                    <SD GID="4b7d4c1b-2f32-441f-97f2-c1235919b074">/MICROSAR/Dem_swc/ComponentTypes/DemSatellite_0/DemSatellite_0InternalBehavior/Timer_Dem_SatelliteMainFunction</SD>
+                                    <SD GID="bc2f5980-a995-4e45-bb17-1ab2d96b6f76">/MICROSAR/Dem_swc/DataTypes/Dem_DTCOriginType</SD>
+                                    <SD GID="80b5d7bb-f941-4721-93d7-fd0ec01698d5">/MICROSAR/Dem_swc/Interfaces/ClearDTC</SD>
+                                    <SD GID="88e02ef6-c26d-4965-a51b-a50a07d8d619">/MICROSAR/Dem_swc/Interfaces/ClearDTC/ClearDTC</SD>
+                                    <SD GID="56a25bde-d109-47f1-8540-1d7502943827">/MICROSAR/Dem_swc/Interfaces/ClearDTC/SelectDTC</SD>
+                                    <SD GID="4c8df24a-4c4d-4d32-88d6-d66c88ef6362">/MICROSAR/Dem_swc/Interfaces/EvMemOverflowIndication</SD>
+                                    <SD GID="7ef37ee8-c6c1-4934-aa16-9fef5d5f2b91">/MICROSAR/Dem_swc/Interfaces/EvMemOverflowIndication/GetEventMemoryOverflow</SD>
+                                    <SD GID="ec30f0e1-ac0c-45fb-8ae0-1c61c7c29d5e">/MICROSAR/Dem_swc/Interfaces/EvMemOverflowIndication/GetNumberOfEventMemoryEntries</SD>
+                                    <SD GID="c1ad0d2e-4254-4712-9b0d-ab873217a98d">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det/DetBehavior</SD>
+                                    <SD GID="1e4def5a-9e28-403f-a1ed-9e4365752150">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det/DetBehavior/DET_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="c779d2b5-172c-4c2f-8880-a0c08343747b">/MICROSAR/Det_swc/ComponentTypes/Det</SD>
+                                    <SD GID="e57cbb57-a83d-40ac-8b17-b65fb5cbdad7">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior</SD>
+                                    <SD GID="fffe731f-98d9-406a-aed5-f2b5240ebf19">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior/OpEventReportError_ReportError_DetModule_DetModuleInstance</SD>
+                                    <SD GID="93d17eb5-3e47-41f9-84db-162c9a5db8c7">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior/OpEventReportRuntimeError_ReportRuntimeError_DetModule_DetModuleInstance</SD>
+                                    <SD GID="6d630fc2-c978-4c92-90cd-27efa3af77e5">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior/ReportError</SD>
+                                    <SD GID="8f14be35-c934-49b2-8bba-b72f45e6b769">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior/ReportRuntimeError</SD>
+                                    <SD GID="36506b09-c6ad-48da-a4a9-d261eb4cf2a3">/MICROSAR/Det_swc/ComponentTypes/Det/DetModule_DetModuleInstance</SD>
+                                    <SD GID="8545c782-697b-4539-b149-d0b4495a118b">/MICROSAR/Det_swc/Interfaces/DETService</SD>
+                                    <SD GID="02106f49-26a7-4f1d-a51a-8983e9456d30">/MICROSAR/Det_swc/Interfaces/DETService/E_OK</SD>
+                                    <SD GID="7f0347a7-46bb-4de5-8655-40881c6ec650">/MICROSAR/Det_swc/Interfaces/DETService/ReportError</SD>
+                                    <SD GID="08a0cede-d137-47b2-89fc-e90daeaab29b">/MICROSAR/Det_swc/Interfaces/DETService/ReportRuntimeError</SD>
+                                    <SD GID="ffa2bea5-9f09-4f43-bd35-428c96317885">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/E_OK</SD>
+                                    <SD GID="0ef7d09a-c697-4994-8972-74ad8b1e6b0f">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior</SD>
+                                    <SD GID="22277854-bdb9-4257-b0ea-b0a3e6e84b19">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="bff1df1c-8c81-43c1-a37a-2541c19e5df7">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="a86abcda-0f39-44d8-86c1-0bd162cc3588">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="da0aee17-945e-4913-8a0c-be14ee92ee9a">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</SD>
+                                    <SD GID="8dd7d1dc-5e97-4e89-a9bc-ba0dd7476bd6">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="4fe063ce-49b7-472f-8504-2cf4efbfd0e9">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM_MainFunction</SD>
+                                    <SD GID="c5a366f1-692f-4fc7-a79e-22a32f9bcd0f">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</SD>
+                                    <SD GID="a3ac759c-c48a-4005-9613-742545749c18">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior</SD>
+                                    <SD GID="dc9d0f48-f5d3-4d7c-979c-3b9275e5c7e4">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/EcuM_MainFunction</SD>
+                                    <SD GID="9f776e88-b53b-4d5e-b94f-471b08c02d05">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetBootTarget</SD>
+                                    <SD GID="958a7d31-b290-4793-8d0d-dd1f9e57b1e5">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetLastShutdownTarget</SD>
+                                    <SD GID="5c417f76-48f5-42a1-88d6-507b540c3eec">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetShutdownCause</SD>
+                                    <SD GID="1c35677d-8a5b-463a-be38-d2b7903c5a6a">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetShutdownTarget</SD>
+                                    <SD GID="eaa2afc0-a35f-449c-ba14-364a2fd5fd8a">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetBootTarget_GetBootTarget_EcuM_BootTarget</SD>
+                                    <SD GID="cb63867b-2237-4811-a159-fb06d6396912">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetLastShutdownTarget_GetLastShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="88f3fd22-c863-4069-b214-7729f582885f">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetShutdownCause_GetShutdownCause_EcuM_ShutdownTarget</SD>
+                                    <SD GID="ad76789c-20a6-45aa-9425-ffaf57e9aa3d">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetShutdownTarget_GetShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="4b079ddc-7506-4ba5-b234-4aa40761ab41">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectBootTarget_SelectBootTarget_EcuM_BootTarget</SD>
+                                    <SD GID="24db3065-6af9-481d-af2b-ed61c11d8340">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectShutdownCause_SelectShutdownCause_EcuM_ShutdownTarget</SD>
+                                    <SD GID="0f0c9630-dbcb-4216-a366-aa7d7139a97d">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectShutdownTarget_SelectShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="a55d540d-659c-4a53-8d9c-ba0aca140bb0">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectBootTarget</SD>
+                                    <SD GID="4922252c-416d-4c44-b1bc-a03aba9ffa49">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectShutdownCause</SD>
+                                    <SD GID="8770ff52-55be-4166-bf94-2d7a0b8f8f8d">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectShutdownTarget</SD>
+                                    <SD GID="a77154ed-67e8-4e8a-af0d-16509fd963c9">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/Timer_EcuM_MainFunction</SD>
+                                    <SD GID="dec36937-4941-44a9-96bc-8b73720ff67d">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuM_BootTarget</SD>
+                                    <SD GID="b995adf7-a8c9-4fd5-85f9-2679819dc815">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuM_ShutdownTarget</SD>
+                                    <SD GID="95369de1-1faf-43cc-891c-7b7c9e0d8481">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_BootTargetType</SD>
+                                    <SD GID="8ac71ef1-e7f3-48ff-860a-b8d4a53f2610">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ModeType</SD>
+                                    <SD GID="ac8a28e9-24f6-4254-a980-0f4450dc98a2">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ShutdownCauseType</SD>
+                                    <SD GID="081ce4d0-a712-4a2e-8506-430991f7e779">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_StateType</SD>
+                                    <SD GID="d9d2c956-8c0f-4e7a-b6ac-e41c6aa44bdd">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_BootTargetType_Constr</SD>
+                                    <SD GID="657f25e8-5abc-4068-964d-790389b47c91">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_ModeType_Constr</SD>
+                                    <SD GID="13bb922c-3022-44d0-bc65-fe3abb31e25b">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_ShutdownCauseType_Constr</SD>
+                                    <SD GID="bb68d0ab-22e9-4688-940f-cada3e5a662c">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_StateType_Constr</SD>
+                                    <SD GID="593603e3-fc9f-470e-8cdd-cd14fd949775">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_TimeType_Constr</SD>
+                                    <SD GID="67010dac-b266-47a7-8879-dd804774238b">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_UserType_Constr</SD>
+                                    <SD GID="a7a996e7-a8d5-4e42-a46e-99bc0bd098a7">/MICROSAR/EcuM_swc/DataTypes/EcuM_BootTargetType</SD>
+                                    <SD GID="f7c96f1c-14c8-45b5-bca5-1c804e9c0e5c">/MICROSAR/EcuM_swc/DataTypes/EcuM_ModeType</SD>
+                                    <SD GID="b2e5aba1-51ae-4e37-ac04-c49345f2520d">/MICROSAR/EcuM_swc/DataTypes/EcuM_ShutdownCauseType</SD>
+                                    <SD GID="a1b834ae-1d81-41e0-923d-0fcb156cc80d">/MICROSAR/EcuM_swc/DataTypes/EcuM_StateType</SD>
+                                    <SD GID="9fa56ca1-490d-4481-ab77-e4d9db2010f5">/MICROSAR/EcuM_swc/DataTypes/EcuM_TimeType</SD>
+                                    <SD GID="80136040-5583-4b1a-b65e-362bfde9e0c5">/MICROSAR/EcuM_swc/DataTypes/EcuM_UserType</SD>
+                                    <SD GID="a352b18a-fc19-4f7f-9b92-0740873f804e">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget</SD>
+                                    <SD GID="1eebcf1f-5313-43d0-9b48-a14c16587a24">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/E_NOT_OK</SD>
+                                    <SD GID="7f8b614b-b224-49c6-b999-2e3e016ca680">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/GetBootTarget</SD>
+                                    <SD GID="66ab654c-c60c-486b-83e7-bac0ea563cc6">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/SelectBootTarget</SD>
+                                    <SD GID="950e7c14-df1a-47f4-82ce-859d37b4803b">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget</SD>
+                                    <SD GID="fd60bd05-494c-4c8d-a1e0-2c446d30b46f">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/E_NOT_OK</SD>
+                                    <SD GID="9e5997c5-5b44-4613-88a9-8de17f8798cc">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetLastShutdownTarget</SD>
+                                    <SD GID="8703c562-57f8-4273-bb66-dae8a0e54834">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownCause</SD>
+                                    <SD GID="ad21848e-351d-46c1-b711-ac8166842f5f">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownTarget</SD>
+                                    <SD GID="43fc5a4f-fd99-48a2-a1b2-0cb998b4c08e">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownCause</SD>
+                                    <SD GID="e058416f-f580-450f-a5d3-3cc15672dadc">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownTarget</SD>
+                                    <SD GID="ae6adca8-3405-46d1-8ded-8a9351f23428">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc</SD>
+                                    <SD GID="02c79fbd-520a-4dd3-aa1b-0f9eddc84859">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/OsService_SystemTimer</SD>
+                                    <SD GID="1c0cb8dc-7bca-4bb3-a916-8600c4657309">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior</SD>
+                                    <SD GID="29ea01b6-45a3-4b5b-aa7d-471b7a2ce8dd">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/GetCounterValue</SD>
+                                    <SD GID="2f589b00-02c8-4e68-87ca-39d0dc0a1fe2">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/GetElapsedValue</SD>
+                                    <SD GID="84124455-b8d2-4b15-8624-3182ab6e126c">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer</SD>
+                                    <SD GID="96f4d0a5-7eb4-4af2-b6c2-b076a8e24d88">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer</SD>
+                                    <SD GID="7962d48b-94f6-4481-a978-c3334d29036a">/MICROSAR/Os_swc/DataTypes/CounterType</SD>
+                                    <SD GID="3eeaf0b8-6716-45f2-8911-00b39acb2de0">/MICROSAR/Os_swc/DataTypes/DataConstrs/CounterType_Constr</SD>
+                                    <SD GID="961d8a54-9d77-43e5-81c3-34e7a25ae876">/MICROSAR/Os_swc/DataTypes/DataConstrs/TimeInMicrosecondsType_Constr</SD>
+                                    <SD GID="133a6f0b-43b1-4ca8-b81a-18c47152ec46">/MICROSAR/Os_swc/DataTypes/TimeInMicrosecondsType</SD>
+                                    <SD GID="f40865e5-371e-4316-adb8-695f4a083db4">/MICROSAR/Os_swc/Interfaces/Os_Service</SD>
+                                    <SD GID="841a70dd-3d25-4782-ae35-ea19055c64d0">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OK</SD>
+                                    <SD GID="311ef15f-ae04-4363-9b95-52fe2489b723">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OS_ID</SD>
+                                    <SD GID="7008fb34-8a3d-4a7e-8230-ff25c1084420">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OS_VALUE</SD>
+                                    <SD GID="8d7f04d0-4006-4ca4-b695-b4f8c5508d04">/MICROSAR/Os_swc/Interfaces/Os_Service/GetCounterValue</SD>
+                                    <SD GID="5cda901e-7db0-4478-85f6-20bb8a2802ca">/MICROSAR/Os_swc/Interfaces/Os_Service/GetElapsedValue</SD>
+                                    <SD GID="68461140-188a-4c45-83a7-70ca57fa3179">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior</SD>
+                                    <SD GID="4aa6ce32-73aa-4583-b712-41915cb75b92">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior/PDUR_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="e6883765-27bb-40c8-b767-748b9c7ee1a1">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
+                                    <SD GID="b98f5eaa-a922-4fe9-8f50-29a6af23f979">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte_ComSendSignalProxyPeriodic</SD>
+                                    <SD GID="97BC8BAE-F3E8-4B8E-984A-9067A9392F2F">/PortInterfaces/EmergencyBrakeLight/u8_Signal</SD>
+                                    <SD GID="3E69C45C-8882-4FDA-AEAF-16793889C430">/PortInterfaces/HazardSw/u8_Signal</SD>
+                                    <SD GID="1A00926F-D6BD-4762-9CF7-089D2062FDB8">/PortInterfaces/IGN_Status/u8_signal</SD>
+                                    <SD GID="D5E4B923-5940-4742-8E42-1889E611B022">/PortInterfaces/TurnLampCtrlCmd_FL/u8_signal</SD>
+                                    <SD GID="E3C760FC-0013-4E74-82E1-70C596C30153">/PortInterfaces/TurnLampFb_FL/u8_Signal</SD>
+                                    <SD GID="4922083C-9E97-4291-A740-03FC59D0FBF8">/PortInterfaces/TurnLampFb_FR/u8_Signal</SD>
+                                    <SD GID="92462DDA-BC46-48A5-9D81-1EBA78B0E222">/PortInterfaces/TurnLampFb_RL/u8_Signal</SD>
+                                    <SD GID="0653911B-D743-4F65-BCFC-B907828D6709">/PortInterfaces/TurnLampFb_RR/u8_Signal</SD>
+                                    <SD GID="CAF4FE08-E73E-4AD1-BC74-88A7EAEB28B1">/PortInterfaces/TurnLampSw/u8_Signal</SD>
+                                    <SD GID="F8D8F236-2900-4BE8-8080-A9E4AC914397">/PortInterfaces/VehicleSpeed/u16_signal</SD>
+                                    <SD GID="5187D6A8-2EDE-40D6-B91A-53EA5C3F2EE9">/PortInterfaces/VehicleSpeed_Valid/u8_Signal</SD>
+                                    <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
+                                    <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
+                                    <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>
+                                    <SD GID="DA332353-8E65-46F1-A0AC-EB413EA90B27">/Predefined_DEV/DataConstraints/Dem_UdsStatusByteType</SD>
+                                    <SD GID="{BFD05982-482E-4C42-9D53-AEC2E5E9005D}">/Predefined_DEV/ImplementationDataTypes/Dem_UdsStatusByteType</SD>
+                                    <SD GID="91037BEA-8260-4D81-AF92-D77F36795EEF">/Predefined_DEV/ImplementationDataTypes/NvM_RequestResultType</SD>
+                                    <SD GID="E8567FAC-3DF7-4B9A-AE12-961DD3DAE8F3">/Predefined_DEV/ImplementationDataTypes/NvM_ServiceIdType</SD>
+                                    <SD GID="{4C2A25CC-37AD-475E-9DBB-130FFB6A501C}">/Predefined_DEV/PortInterfaces/CallbackDTCStatusChange/E_NOT_OK</SD>
+                                    <SD GID="74CED587-616F-4D06-917E-3F53B5BEEA2D">/Predefined_DEV/PortInterfaces/NvMAdministration/E_NOT_OK</SD>
+                                    <SD GID="A7AFD599-1333-460B-8602-E5B8D38BC232">/Predefined_DEV/PortInterfaces/NvMService/E_NOT_OK</SD>
+                                    <SD GID="955CA27E-4944-411C-BAAE-69B1FC02E735">/Predefined_DEV/PortInterfaces/NvMService_AC2/E_NOT_OK</SD>
+                                    <SD GID="AE7C0F3C-1FF2-4885-AC24-720F2C4803CC">/Predefined_DEV/PortInterfaces/NvMService_AC2_DS/E_NOT_OK</SD>
+                                    <SD GID="6972E423-93E3-412A-B274-623A39FD4885">/Predefined_DEV/PortInterfaces/NvMService_AC2_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="F57D208E-3B24-44B1-85E2-6DE677CE2E4C">/Predefined_DEV/PortInterfaces/NvMService_AC2_Defs/E_NOT_OK</SD>
+                                    <SD GID="AC97B486-472E-4E26-9095-534043BD6059">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS/E_NOT_OK</SD>
+                                    <SD GID="DD49315B-E90D-42DE-84EB-9038C40AC0F4">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="35C3D373-0A95-48FB-A7E8-C6547D847643">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="3A6380A3-5689-4BF4-8130-4077BF42A783">/Predefined_DEV/PortInterfaces/NvMService_AC2_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="411B4EE7-B370-4551-84C5-F2CBA01BEF63">/Predefined_DEV/PortInterfaces/NvMService_AC3/E_NOT_OK</SD>
+                                    <SD GID="E970E446-1330-433C-92DD-02B1B320873E">/Predefined_DEV/PortInterfaces/NvMService_AC3_DS/E_NOT_OK</SD>
+                                    <SD GID="37C797B4-27EB-423F-A6B1-ACFC4F2468BA">/Predefined_DEV/PortInterfaces/NvMService_AC3_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="3A6983A4-9F58-4C23-856C-E88B9E309311">/Predefined_DEV/PortInterfaces/NvMService_AC3_Defs/E_NOT_OK</SD>
+                                    <SD GID="0FB784A8-81A7-4D73-A273-2637B6C95B77">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/E_NOT_OK</SD>
+                                    <SD GID="85EB2C6E-0E4E-4FD7-81B6-0A478E1FDCE9">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="B317254F-A1D4-4ABA-B790-A9B56185F29F">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="5D147234-5CAA-49EC-92C2-8599A89FC2ED">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="C25D8A75-6B98-417F-AE89-B977A098FAE3">/Predefined_DEV/PortInterfaces/NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="6B9A70AB-B127-4BE0-815D-B29710D5293F">/Predefined_DEV/PortInterfaces/NvSWC_NvMAdministration/E_NOT_OK</SD>
+                                    <SD GID="7E3CE6B8-1997-44D8-B698-F6983653F390">/Predefined_DEV/PortInterfaces/NvSWC_NvMService/E_NOT_OK</SD>
+                                    <SD GID="87E31B18-FBF9-45FB-AE02-54D03CC44410">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2/E_NOT_OK</SD>
+                                    <SD GID="86679F7A-9112-41EA-8CE9-7B0B64F8F10E">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_DS/E_NOT_OK</SD>
+                                    <SD GID="2CD9C18B-1508-4E06-AE5B-55EB6ED4AE1E">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="38196A38-C113-403E-8710-D9A4DB2DCB7C">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_Defs/E_NOT_OK</SD>
+                                    <SD GID="212FF34E-F98B-4B8F-A93C-806D768CCA6B">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS/E_NOT_OK</SD>
+                                    <SD GID="4B0CB611-845A-46B4-8804-A72E3DDBC280">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="F8510316-D4F5-4099-8C4B-8B535F0DC637">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="8D4913EF-2DCA-499E-B61F-7A0C820299B6">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC2_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="C3F8628D-F73F-4A7A-839D-42D24BF6C335">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3/E_NOT_OK</SD>
+                                    <SD GID="A406FAE2-1978-4E73-835D-ACE055CE3276">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_DS/E_NOT_OK</SD>
+                                    <SD GID="F6CF58F3-F332-4C16-8B77-3B3431B7291B">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="91D780B3-A8A2-4E9B-842F-B5946B451CCC">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_Defs/E_NOT_OK</SD>
+                                    <SD GID="419091BB-CC3F-4518-9B87-F2C428DE884F">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS/E_NOT_OK</SD>
+                                    <SD GID="E2B7EDDF-443E-4066-8CC0-428C08FE9932">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS/E_NOT_OK</SD>
+                                    <SD GID="29D8C45D-AD65-4ADB-A8C0-9051D3BA8EB3">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
+                                    <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
+                                    <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="ed46821a-7b45-4226-88ba-d9ceb818a9ec">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
+                                    <SD GID="7f5ff0e9-1830-41ff-bf2d-e0bb0470aae8">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="d7e9b4a3-8f67-4b94-bfb9-c575aadbca7f">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="57cee505-9e50-46fd-9e39-7a4fb432c528">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="3bc8bc40-49ed-4f4f-879c-1c637a98800b">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="a7cb4d71-60fb-44e9-8428-d93812d8a365">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="cd044e32-3d2c-49ce-ba56-579e52c07892">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="d38ae068-bea9-49aa-95a9-f2b8125b77bc">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="041b61d9-6e3a-45f2-b26f-012f07b37972">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="cd050c77-8f61-4bbf-a901-7b304b510a93">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="f6f5cde7-feb3-46e7-86b0-5d0d8a6601da">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="11fb98a2-a38a-4ffa-adcf-50bb8f903e03">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="08f1e7eb-aabd-40ec-8ab3-23b2698aecbe">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="bc8fb17f-a980-434d-bc23-95a2fce96cfb">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="44554a85-6b24-4e7e-907c-4fde01c108d6">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="afb49d61-89c8-49c8-9496-cc3b2f27b7db">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="957472ed-f404-4678-9c08-6c336ca4a157">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="c5c29fa5-95c5-4ce3-a555-22b6b7f81bda">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="e3e41bb2-e050-41c1-9df2-1c14bb834346">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="7c9b9207-23e1-49d4-bed1-50f7e5fd717a">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="56b1e694-4886-4ad1-a99e-0c9a7db67d4f">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="cbe477b5-2ced-4308-97e3-3eb425afb8c3">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="48a1e7a7-ce42-4a9c-850b-320443861241">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="a48d12d7-4d2d-4e6b-b498-ba42894ba1ad">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="b549c571-ded5-4d65-ae67-61342a54e5be">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="981f5c56-03ce-431f-b7d6-d1a5e1832bdb">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="79a9858b-1ca9-4dc8-a80e-8614c9dcfdf8">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="14bf10fb-832a-4e60-a074-c5ee7a289045">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="8bc2f8d0-abde-4d40-9c47-d3c1b8446a12">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="197bba90-38f4-44c6-9e15-c620e73a33a5">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="061ededf-76c8-419e-802e-8848f5369166">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="7e856dec-377d-4bd3-88a7-ddc69f8fbe60">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_30</SD>
+                                    <SD GID="aba2fdee-8268-496d-b436-897da6aef37b">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior</SD>
+                                    <SD GID="6dbb57b6-3b2a-408b-b017-56d2b64e6188">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="7c0207fc-cb73-4e9f-aa82-5b2ff71fb8e2">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="cc7aaf93-a878-457f-b9b8-f992411cdeb3">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="2ae6ec00-a63a-4b38-b85e-6e3792a997b2">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="ebe78dc2-6c6e-479a-b9d8-4edeba28ae7e">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="7216a02b-c9dd-4f24-a3f2-8df1920d2bdf">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="9037322e-3a91-4518-866e-20be6d40204e">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="69300ef0-4c84-4774-a1aa-2db2cee61f1b">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="ccfe00c6-e196-4013-9780-452cd9810da8">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="d11df088-29b4-4b22-a034-96bd519ba533">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="ae97790c-b823-4515-a738-0424e8188ef1">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="0a8718d8-2121-4add-a872-3c8dc8cbaafa">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="aad8ecbe-d6d3-4752-a114-5d0308d5d512">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="6d61ff6b-279c-40e7-886e-e590266e4d6f">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="ddf005b9-717b-410a-bc9a-80440013cb6d">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="3d8c2e73-3965-4990-bdba-ff2f0c3cb82f">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="7cf7a964-6e1f-48b5-b760-b0290289a781">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="009d7b60-6fd7-4b27-9ef7-d86d39d02919">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="cd3aaf7d-c1e0-4b2d-be85-4dc210d86c0b">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="8f683c06-30c5-4952-9fdb-61544f6840bf">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="5d680b00-b298-48d3-9b34-e35f7705c71a">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="985df6dc-1fec-4067-a85e-5ae51eae7c54">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="63a4b18f-0753-492e-b09c-83fd9776cf85">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="ec4c7562-15f1-4490-98ac-8ed7e1b1acbf">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="796a7349-e984-4db1-9c21-80eaf8f2f015">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="70042465-3b08-4135-81d2-eb86d887e326">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="6cb4e6af-f3ea-47f5-94b8-35a23087ed02">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="3d20e294-201f-477c-8be2-abcd6e1fd6cb">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="f2fd30cc-e2b6-4036-b8f4-5d9ae7e7edcf">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="35d857a8-b206-4b71-b233-9bdb905e5c18">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="690f18f1-5b24-4b16-ad84-0d6ac388f998">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_30</SD>
+                                    <SD GID="0b464bc3-34ab-4750-b032-d75dc6941b2f">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior</SD>
+                                    <SD GID="3fa54a52-22e5-49ab-8d57-f9a18454c75a">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="a12c8f66-0454-478e-a0b5-45984000ef3d">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="83cb9b17-9595-4bc6-a43a-2705e72ae0c7">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="5ce01bf0-f07e-4b40-a69d-f29d1e1d2eaa">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="3ca61d4d-0583-4fe6-a8ae-b229f57444ba">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="0fc2b4ff-43bc-4054-885c-7edf1965fdd9">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="e3e6ee56-a125-4086-9ec4-720b970a68bb">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="9e9a4a44-aba7-4321-b773-d5c0acc431a6">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="70d14901-d29d-4697-a3b7-eb97db4d86cc">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="b470bf45-a4e1-4eaa-bfd6-6ea991adde0b">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="a9197570-3012-4ed0-bffb-9e42bdecbb2d">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="348c9692-1377-467c-9191-4072cd2c02a1">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="13a9df46-4f2a-4bf7-ae30-10ccdec7204f">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="eca39441-1538-42e1-ae73-388fe499a660">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="8529e7ee-c425-49a3-9dbd-9b8a0dd9aa51">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="06f62741-8d10-4f35-8b34-fb21e2cad3eb">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="8f41eaa8-e2af-4c68-9867-dda17c17ffde">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="8d438728-b1fe-485e-97d7-bd865a7c1614">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="831950d2-8b36-471f-8cf6-904d4e578f8a">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="11e76059-3658-410c-8ae2-b03481684e76">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="0ff9ef8b-78e4-4210-9a6d-2d7627550732">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="7434a184-d48b-4e8a-bb44-e2f82cf00ded">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="f8b0ed01-7322-4e46-94cb-fbaa3c1b2c73">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="deec10e7-afc6-49cf-b14c-4fad9149f143">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="ef661a8c-093f-43d5-bb05-056d8f77ca3e">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="3ad2c03a-5eef-492b-b385-0eb1750d9669">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="94e459df-c709-4a61-ab9d-4b4dd471a263">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="ad4deb61-9e36-4289-8aec-5f0e82a23e16">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="95de89ce-e659-4403-8cf3-1ffa787fa6e7">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="20fcc88c-53d5-468f-bf68-5223336041a9">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="eabcf2a8-a246-4fda-a849-5c5892b74c50">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_30</SD>
+                                    <SD GID="7b8f0f6f-8ff7-4fce-ac21-53115e2de32d">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior</SD>
+                                    <SD GID="673feebe-a5f8-4465-9eef-312d2c8bf96d">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="4480ff95-fcde-40d2-811b-48f4fc7e592c">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="d39ae41a-8f06-4a12-884f-fab537524109">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="2714e9d0-aba7-47f7-b0b9-a9b0b49b6629">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="d985b5cd-ff91-4a44-a8e8-fc73980911e7">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="fdb12653-cc3d-43bc-9f09-64ab6f2f7561">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="3fcc3ddb-be27-4bde-a071-b31d175936ef">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="cbebde0f-083c-48f7-a2e3-d2495530c173">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="4d715fce-54a2-49f1-869f-5448ae74b2d3">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="9b47b29a-a1c3-4025-8121-c9e97d3a3dd6">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="3589dd31-4d0c-412b-8f88-2a517825ff97">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="98efdbcd-209a-492f-b216-c5404a0453f3">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="b105df7c-2117-4371-a09b-714ef5b9bb6e">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="fb9262d1-0464-4ae8-8f5a-2b4130d00486">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="9109f4fd-b338-4ad8-af8a-c3492b4e2fa5">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="4c16beb7-0389-4714-8658-de171db41a3a">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="508ae928-adfb-4ab1-9e36-70ae6a62165c">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="d9b51d24-ff53-409b-b780-b6d8873d6957">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="8b3770de-bb64-4c1b-8079-4ab54eab5fc0">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="56f4a0e9-d796-45ed-8960-f257843cf8fb">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="6e7bd5d6-66ae-45c7-9a33-a005de800267">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="72d2612c-eee1-4a8f-8857-ca371dbe0cc1">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="ad8a28e3-3d72-46f7-8257-db40af73455f">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="aaff99ea-1b65-454d-b1e4-9e70eb75e698">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="70e9b81d-3fd8-4321-b0fa-20b954980cd9">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="db98e652-625c-42da-861b-dc9304cba771">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="dad33d77-47a7-47fa-b22a-d74da0ea9da7">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="12738cb3-452a-4cb2-9877-c87c4d4a634b">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="25fd7c39-fc0b-4e11-a9ec-fe89a4e5eacf">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="886a2ca7-7aa4-4b5a-a77a-21b6e3732b34">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="ac7db52c-c640-4e1b-93c2-aa774014ecb3">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_30</SD>
+                                    <SD GID="94c88959-2468-40f2-acba-09999cb8274b">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_Handling</SD>
+                                    <SD GID="cfb81dfd-566e-4280-a862-7b2dbc34c398">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_HandlingTimingEvent0</SD>
+                                    <SD GID="7ee0b7c2-7190-4ffd-9558-a3bdfca84943">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi_MainFunction_Handling</SD>
+                                    <SD GID="29F5C8CD-4E0A-4B35-B776-F132348B6E03">/VehicleProject/System/EcuSwComposition</SD>
+                                  </SDG>
+                                </SDGS>
+                              </ADMIN-DATA>
+                            </AR-PACKAGE>
+                          </AR-PACKAGES>
+                        </AR-PACKAGE>
+                      </AR-PACKAGES>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,22 @@
+# Build outputs and temporary artifacts
+Debug/
+Log/
+Appl/lst/
+
+# IAR workspace/user-generated artifacts
+*.dep
+*.ewt
+*.pbi
+*.pbd
+*.pbw
+*.map
+*.out
+*.sim
+*.dnx
+
+# User-specific Davinci/IAR settings
+*.dcusr
+*.silent.dcusr
+
+# Editor metadata
+.vscode/

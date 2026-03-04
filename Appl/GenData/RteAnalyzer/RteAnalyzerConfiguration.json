@@ -1,0 +1,1365 @@
+{
+   "description" : "RTE Analyzer configuration file",
+   "version" : "1.2.0",
+   "BswOsApplication" : "",
+   "COMDirectory" : "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/BSW/Com",
+   "DataConsistencyAPIGroupList" : [
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "DisableAllInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "ProhibitedAPIFunctions" : [
+            "^(Wait|Set)Event",
+            "^(Activate|Chain|Terminate)Task",
+            "^Suspend(All|OS)Interrupts",
+            "^GetResource",
+            "^osDisable.",
+            "^Schedule"
+         ],
+         "Type" : "INTERRUPT",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "EnableAllInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableGlobalAM",
+               "RequiresTrustedContext" : "0"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableGlobalKM",
+               "RequiresTrustedContext" : "1"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableGlobalUM",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "ProhibitedAPIFunctions" : [
+            "^(Wait|Set)Event",
+            "^(Activate|Chain|Terminate)Task",
+            "^DisableAllInterrupts",
+            "^GetResource",
+            "^osDisable.",
+            "^Schedule"
+         ],
+         "Type" : "INTERRUPT",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableGlobalAM",
+               "RequiresTrustedContext" : "0"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableGlobalKM",
+               "RequiresTrustedContext" : "1"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableGlobalUM",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableLevelAM",
+               "RequiresTrustedContext" : "0"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableLevelKM",
+               "RequiresTrustedContext" : "1"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableLevelUM",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "ProhibitedAPIFunctions" : [
+            "^(Wait|Set)Event",
+            "^(Activate|Chain|Terminate)Task",
+            "^DisableAllInterrupts",
+            "^GetResource",
+            "^osDisable.",
+            "^Schedule"
+         ],
+         "Type" : "INTERRUPT",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableLevelAM",
+               "RequiresTrustedContext" : "0"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableLevelKM",
+               "RequiresTrustedContext" : "1"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableLevelUM",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "1",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "SuspendAllInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "ProhibitedAPIFunctions" : [
+            "^(Wait|Set)Event",
+            "^(Activate|Chain|Terminate)Task",
+            "^DisableAllInterrupts",
+            "^GetResource",
+            "^osDisable.",
+            "^Schedule"
+         ],
+         "Type" : "INTERRUPT",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "ResumeAllInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "1",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "SuspendOSInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "ProhibitedAPIFunctions" : [
+            "^(Wait|Set)Event",
+            "^(Activate|Chain|Terminate)Task",
+            "^DisableAllInterrupts",
+            "^GetResource",
+            "^osDisable.",
+            "^Schedule"
+         ],
+         "Type" : "INTERRUPT",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "ResumeOSInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "0",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "GetResource",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "ProhibitedAPIFunctions" : [
+            "^(Wait|Set)Event",
+            "^(Activate|Chain|Terminate)Task",
+            "^Schedule"
+         ],
+         "Type" : "RESOURCE",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "ReleaseResource",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "0",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "GetSpinlock",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "1",
+         "LocksSameCore" : "0",
+         "ProhibitedAPIFunctions" : [
+            "^(Wait|Set)Event",
+            "^(Activate|Chain|Terminate)Task",
+            "^Schedule"
+         ],
+         "Type" : "SPINLOCK",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "ReleaseSpinlock",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      }
+   ],
+   "ISRList" : [
+      {
+         "ExecutedOnTaskLevel" : "0",
+         "NamePattern" : "Rte_LdComCbk.*"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_GetMirror.*"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_SetMirror.*"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_NvMNotifyJobFinished.*"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_NvMNotifyInitBlock.*"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_EmergencyBrakeLight_omsg_Receive_oCAN00_5282eb8e_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_EmergencyBrakeLight_omsg_Receive_oCAN00_5282eb8e_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_EmergencyBrakeLight_omsg_Receive_oCAN00_5282eb8e_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_EmergencyBrakeLight_omsg_Receive_oCAN00_5282eb8e_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_EmergencyBrakeLight_omsg_Receive_oCAN00_5282eb8e_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_EmergencyBrakeLight_omsg_Receive_oCAN00_5282eb8e_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_EmergencyBrakeLight_omsg_Receive_oCAN00_5282eb8e_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_HazardSw_omsg_Receive_oCAN00_578d9c4d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_HazardSw_omsg_Receive_oCAN00_578d9c4d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_HazardSw_omsg_Receive_oCAN00_578d9c4d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_HazardSw_omsg_Receive_oCAN00_578d9c4d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_HazardSw_omsg_Receive_oCAN00_578d9c4d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_HazardSw_omsg_Receive_oCAN00_578d9c4d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_HazardSw_omsg_Receive_oCAN00_578d9c4d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_IGN_Status_omsg_Receive_oCAN00_593fdbd9_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_IGN_Status_omsg_Receive_oCAN00_593fdbd9_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_IGN_Status_omsg_Receive_oCAN00_593fdbd9_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_IGN_Status_omsg_Receive_oCAN00_593fdbd9_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_IGN_Status_omsg_Receive_oCAN00_593fdbd9_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_IGN_Status_omsg_Receive_oCAN00_593fdbd9_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_IGN_Status_omsg_Receive_oCAN00_593fdbd9_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_LA_St_DirectionLampL_omsg_Transmit_oCAN00_c218ca04_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_LA_St_DirectionLampL_omsg_Transmit_oCAN00_c218ca04_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_LA_St_DirectionLampL_omsg_Transmit_oCAN00_c218ca04_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_LA_St_DirectionLampL_omsg_Transmit_oCAN00_c218ca04_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_LA_St_DirectionLampL_omsg_Transmit_oCAN00_c218ca04_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_LA_St_DirectionLampL_omsg_Transmit_oCAN00_c218ca04_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_LA_St_DirectionLampL_omsg_Transmit_oCAN00_c218ca04_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_LA_St_DirectionLampR_omsg_Transmit_oCAN00_a05dfcc5_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_LA_St_DirectionLampR_omsg_Transmit_oCAN00_a05dfcc5_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_LA_St_DirectionLampR_omsg_Transmit_oCAN00_a05dfcc5_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_LA_St_DirectionLampR_omsg_Transmit_oCAN00_a05dfcc5_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_LA_St_DirectionLampR_omsg_Transmit_oCAN00_a05dfcc5_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_LA_St_DirectionLampR_omsg_Transmit_oCAN00_a05dfcc5_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_LA_St_DirectionLampR_omsg_Transmit_oCAN00_a05dfcc5_Tx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_TurnLampFb_FL_omsg_Receive_oCAN00_3ab29a6d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_TurnLampFb_FL_omsg_Receive_oCAN00_3ab29a6d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_TurnLampFb_FL_omsg_Receive_oCAN00_3ab29a6d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_TurnLampFb_FL_omsg_Receive_oCAN00_3ab29a6d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_TurnLampFb_FL_omsg_Receive_oCAN00_3ab29a6d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_TurnLampFb_FL_omsg_Receive_oCAN00_3ab29a6d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_TurnLampFb_FL_omsg_Receive_oCAN00_3ab29a6d_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_TurnLampFb_FR_omsg_Receive_oCAN00_a2998431_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_TurnLampFb_FR_omsg_Receive_oCAN00_a2998431_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_TurnLampFb_FR_omsg_Receive_oCAN00_a2998431_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_TurnLampFb_FR_omsg_Receive_oCAN00_a2998431_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_TurnLampFb_FR_omsg_Receive_oCAN00_a2998431_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_TurnLampFb_FR_omsg_Receive_oCAN00_a2998431_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_TurnLampFb_FR_omsg_Receive_oCAN00_a2998431_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_TurnLampFb_RL_omsg_Receive_oCAN00_cfe4432c_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_TurnLampFb_RL_omsg_Receive_oCAN00_cfe4432c_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_TurnLampFb_RL_omsg_Receive_oCAN00_cfe4432c_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_TurnLampFb_RL_omsg_Receive_oCAN00_cfe4432c_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_TurnLampFb_RL_omsg_Receive_oCAN00_cfe4432c_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_TurnLampFb_RL_omsg_Receive_oCAN00_cfe4432c_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_TurnLampFb_RL_omsg_Receive_oCAN00_cfe4432c_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_TurnLampFb_RR_omsg_Receive_oCAN00_57cf5d70_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_TurnLampFb_RR_omsg_Receive_oCAN00_57cf5d70_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_TurnLampFb_RR_omsg_Receive_oCAN00_57cf5d70_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_TurnLampFb_RR_omsg_Receive_oCAN00_57cf5d70_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_TurnLampFb_RR_omsg_Receive_oCAN00_57cf5d70_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_TurnLampFb_RR_omsg_Receive_oCAN00_57cf5d70_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_TurnLampFb_RR_omsg_Receive_oCAN00_57cf5d70_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_TurnLampSw_omsg_Receive_oCAN00_92b10255_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_TurnLampSw_omsg_Receive_oCAN00_92b10255_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_TurnLampSw_omsg_Receive_oCAN00_92b10255_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_TurnLampSw_omsg_Receive_oCAN00_92b10255_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_TurnLampSw_omsg_Receive_oCAN00_92b10255_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_TurnLampSw_omsg_Receive_oCAN00_92b10255_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_TurnLampSw_omsg_Receive_oCAN00_92b10255_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_VehicleSpeed_Valid_omsg_Receive_oCAN00_6a5f4ba3_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_VehicleSpeed_Valid_omsg_Receive_oCAN00_6a5f4ba3_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_VehicleSpeed_Valid_omsg_Receive_oCAN00_6a5f4ba3_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_VehicleSpeed_Valid_omsg_Receive_oCAN00_6a5f4ba3_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_VehicleSpeed_Valid_omsg_Receive_oCAN00_6a5f4ba3_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_VehicleSpeed_Valid_omsg_Receive_oCAN00_6a5f4ba3_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_VehicleSpeed_Valid_omsg_Receive_oCAN00_6a5f4ba3_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbk_VehicleSpeed_omsg_Receive_oCAN00_e95dd8a1_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTAck_VehicleSpeed_omsg_Receive_oCAN00_e95dd8a1_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTErr_VehicleSpeed_omsg_Receive_oCAN00_e95dd8a1_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTxTOut_VehicleSpeed_omsg_Receive_oCAN00_e95dd8a1_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkTOut_VehicleSpeed_omsg_Receive_oCAN00_e95dd8a1_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkRxTOut_VehicleSpeed_omsg_Receive_oCAN00_e95dd8a1_Rx"
+      },
+      {
+         "ExecutedOnTaskLevel" : "1",
+         "NamePattern" : "Rte_COMCbkInv_VehicleSpeed_omsg_Receive_oCAN00_e95dd8a1_Rx"
+      }
+   ],
+   "InitFunctionNamePatternList" : [
+      "Rte_InitMemory",
+      "SchM_Init",
+      "Rte_Start",
+      "E2EXf_Init",
+      "Rte_SetMirror_"
+   ],
+   "InlineFunctionNamePatternList" : [
+      "Rte_QAddElement.*",
+      "Rte_QUnqueueElement.*",
+      "Rte_MemCmp.*",
+      "Rte_DecDisableFlags.*",
+      "Rte_IncDisableFlags.*",
+      "E2EXf_.*",
+      "Rte_TrustedWrite.*",
+      "TSC_Inline.*",
+      "Rte_IocReceive_Rte_M.*",
+      "Rte_IocPeek_Rte_M.*",
+      "Rte_IocSend_Rte_M.*"
+   ],
+   "MemCpyFunctionNamePatternList" : [
+      "^llvm.memcpy",
+      "^memcpy",
+      "^Rte_MemCpy.*",
+      "^Rte_PartialMemCpy",
+      "^SomeIpXf_MemCpy.*",
+      "^VStdMemCpy_Func",
+      "^CanTSyn_MemCpy",
+      "^CanTp_Util_MemCpy",
+      "^IpBase_Copy"
+   ],
+   "MemSetFunctionNamePatternList" : [
+      "^.*memset",
+      "^.*MemSet",
+      "^Rte_MemClr"
+   ],
+   "MemmapSectionNamePatternList" : [
+      "(RTE)_(START|STOP)_SEC_(.*)",
+      "(E2EXF|COMXF|DIAGXF|SOMEIPXF)_(START|STOP)_SEC_(.*)"
+   ],
+   "NonReentrantFunctionList" : [
+      {
+         "HandleIndex" : "0",
+         "NamePatternList" : [
+            "Com_SendSignal",
+            "Com_InvalidateSignal",
+            "Com_UpdateShadowSignal",
+            "Com_InvalidateSignalGroup"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "0",
+         "NoConcurrentCallsOnSameCore" : "1"
+      },
+      {
+         "HandleIndex" : "0",
+         "NamePatternList" : [
+            "Com_ReceiveShadowSignal",
+            "Com_ReceiveSignalGroup"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "0",
+         "NoConcurrentCallsOnSameCore" : "1"
+      },
+      {
+         "HandleIndex" : "0",
+         "NamePatternList" : [
+            "LdCom_TriggerTransmit"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "0",
+         "NoConcurrentCallsOnSameCore" : "1"
+      },
+      {
+         "HandleIndex" : "-1",
+         "NamePatternList" : [
+            "^IocSend_(.+)(_[:digit:]+)?",
+            "^IocWrite_(.+)(_[:digit:]+)?",
+            "^IocReceive_(.+)",
+            "^IocRead_(.+)"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "1",
+         "NoConcurrentCallsOnSameCore" : "1"
+      }
+   ],
+   "NotReportedConcurrentAccessList" : [
+      {
+         "Justification" : "Accesses to the server queue are synchronized with SetEvent and WaitEvent",
+         "NamePattern" : "Rte_CS_ServerQueue_.*",
+         "Type" : "VARIABLE"
+      },
+      {
+         "Justification" : "Accesses to the client queue are synchronized with SetEvent and WaitEvent",
+         "NamePattern" : "Rte_CS_ClientQueue_.*",
+         "Type" : "VARIABLE"
+      },
+      {
+         "Justification" : "Accesses to the client queue are synchronized with SetEvent and WaitEvent",
+         "NamePattern" : "Rte_CS_ClientQueue2_.*",
+         "Type" : "VARIABLE"
+      },
+      {
+         "Justification" : "Only error in runnable stubs. Will be fixed with ESCAN00085617",
+         "NamePattern" : ".*_FctPtr",
+         "Type" : "VARIABLE"
+      },
+      {
+         "Justification" : "LDCOM TP API Buffers are protected with a separate busy flag",
+         "NamePattern" : "^Rte_LdCom_.*",
+         "Type" : "VARIABLE"
+      },
+      {
+         "Justification" : "Indices are only modified in the TP Callbacks",
+         "NamePattern" : "^Rte_LdComTpIndices.*",
+         "Type" : "VARIABLE"
+      },
+      {
+         "Justification" : "Accesses to the waiting task list are synchronized with SetEvent and WaitEvent",
+         "NamePattern" : "Rte_CS_WaitingTaskList_.*",
+         "Type" : "VARIABLE"
+      },
+      {
+         "Justification" : "Concurrent access is prevented by idle flags and sequence",
+         "NamePattern" : "^Ioc(Read|Write)_Rte_CS_OutParams_",
+         "Type" : "FUNCTION"
+      }
+   ],
+   "OsAPIFunctions" : [
+      "^os.",
+      "^Com_.",
+      "^LdCom_.",
+      "^(Get|Wait|Clear|Set)Event$",
+      "^(Disable|Enable|Suspend|Resume)AllInterrupts$",
+      "^(Suspend|Resume)OSInterrupts$",
+      "^(Activate|Terminate|Chain)Task$",
+      "^(SetRel|Cancel)Alarm$",
+      "^Get(Core|Task)ID$",
+      "^(Get|Release)(Resource|Spinlock)$",
+      "^Schedule$"
+   ],
+   "OsApplicationList" : [],
+   "PlatformSettings" : {
+      "MaxAtomicMemoryAccess" : "4"
+   },
+   "SIPDirectories" : [
+      "G:\\matlab\\TurnLight\\S32K144_SIP\\MICROSAR\\CBD1800257_D01_S32K1xx\\"
+   ],
+   "SourceFileList" : [
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TestControl"
+         ],
+         "SourceFile" : "Source/TestControl.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte"
+         ],
+         "SourceFile" : "../Rte.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte_OsApplication"
+         ],
+         "SourceFile" : "../Rte_OsApplication.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte_SystemApplication_OsCore0"
+         ],
+         "SourceFile" : "../Rte_SystemApplication_OsCore0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/BswM"
+         ],
+         "SourceFile" : "Source/BswM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_BswM"
+         ],
+         "SourceFile" : "Source/TSC_SchM_BswM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Can"
+         ],
+         "SourceFile" : "Source/Can.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Can"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Can.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/CanIf"
+         ],
+         "SourceFile" : "Source/CanIf.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_CanIf"
+         ],
+         "SourceFile" : "Source/TSC_SchM_CanIf.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/CanSM"
+         ],
+         "SourceFile" : "Source/CanSM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_CanSM"
+         ],
+         "SourceFile" : "Source/TSC_SchM_CanSM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/CanTp"
+         ],
+         "SourceFile" : "Source/CanTp.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_CanTp"
+         ],
+         "SourceFile" : "Source/TSC_SchM_CanTp.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Com"
+         ],
+         "SourceFile" : "Source/Com.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Com"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Com.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/ComM"
+         ],
+         "SourceFile" : "Source/ComM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_ComM"
+         ],
+         "SourceFile" : "Source/TSC_SchM_ComM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Dcm"
+         ],
+         "SourceFile" : "Source/Dcm.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Dcm"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Dcm.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Dem"
+         ],
+         "SourceFile" : "Source/Dem.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Dem"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Dem.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Det"
+         ],
+         "SourceFile" : "Source/Det.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Det"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Det.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Dio"
+         ],
+         "SourceFile" : "Source/Dio.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Dio"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Dio.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/EcuM"
+         ],
+         "SourceFile" : "Source/EcuM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_EcuM"
+         ],
+         "SourceFile" : "Source/TSC_SchM_EcuM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Mcu"
+         ],
+         "SourceFile" : "Source/Mcu.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Mcu"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Mcu.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/PduR"
+         ],
+         "SourceFile" : "Source/PduR.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_PduR"
+         ],
+         "SourceFile" : "Source/TSC_SchM_PduR.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Port"
+         ],
+         "SourceFile" : "Source/Port.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Port"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Port.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Spi"
+         ],
+         "SourceFile" : "Source/Spi.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_SchM_Spi"
+         ],
+         "SourceFile" : "Source/TSC_SchM_Spi.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_BswM"
+         ],
+         "SourceFile" : "Source/TSC_BswM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/CddSbc"
+         ],
+         "SourceFile" : "Source/CddSbc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_CddSbc"
+         ],
+         "SourceFile" : "Source/TSC_CddSbc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Cdd_IoHwAb"
+         ],
+         "SourceFile" : "Source/Cdd_IoHwAb.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Cdd_IoHwAb"
+         ],
+         "SourceFile" : "Source/TSC_Cdd_IoHwAb.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_ComM"
+         ],
+         "SourceFile" : "Source/TSC_ComM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/CtLedTask"
+         ],
+         "SourceFile" : "Source/CtLedTask.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_CtLedTask"
+         ],
+         "SourceFile" : "Source/TSC_CtLedTask.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Dcm"
+         ],
+         "SourceFile" : "Source/TSC_Dcm.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/DemMaster_0"
+         ],
+         "SourceFile" : "Source/DemMaster_0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_DemMaster_0"
+         ],
+         "SourceFile" : "Source/TSC_DemMaster_0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/DemSatellite_0"
+         ],
+         "SourceFile" : "Source/DemSatellite_0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_DemSatellite_0"
+         ],
+         "SourceFile" : "Source/TSC_DemSatellite_0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Det"
+         ],
+         "SourceFile" : "Source/TSC_Det.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_EcuM"
+         ],
+         "SourceFile" : "Source/TSC_EcuM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Os_OsCore0_swc"
+         ],
+         "SourceFile" : "Source/Os_OsCore0_swc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Os_OsCore0_swc"
+         ],
+         "SourceFile" : "Source/TSC_Os_OsCore0_swc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TurnLight"
+         ],
+         "SourceFile" : "Source/TurnLight.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_TurnLight"
+         ],
+         "SourceFile" : "Source/TSC_TurnLight.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TurnLightAct"
+         ],
+         "SourceFile" : "Source/TurnLightAct.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_TurnLightAct"
+         ],
+         "SourceFile" : "Source/TSC_TurnLightAct.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TurnLightArb"
+         ],
+         "SourceFile" : "Source/TurnLightArb.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "G:/matlab/TurnLight/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_TurnLightArb"
+         ],
+         "SourceFile" : "Source/TSC_TurnLightArb.c"
+      }
+   ],
+   "TaskList" : [
+      {
+         "OsApplication" : "",
+         "Preemptive" : "0",
+         "Priority" : "100",
+         "TaskName" : "Default_Init_Task"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "1",
+         "Priority" : "4294967295",
+         "TaskName" : "IdleTask_OsCore0"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "0",
+         "Priority" : "15",
+         "TaskName" : "OsTask_APP"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "0",
+         "Priority" : "10",
+         "TaskName" : "OsTask_BSW_SCHM"
+      }
+   ],
+   "TemplateDataBaseDirectory" : "G:\\matlab\\TurnLight\\S32K144_SIP\\MICROSAR\\CBD1800257_D01_S32K1xx\\Generators\\Rte"
+}
